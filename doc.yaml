@@ -1,0 +1,8403 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: Auto defesa brasil
+  contact:
+    email: jhonatanborgesdj@gmail.com
+    name: Auto defesa brasil 
+    url: https://autodefesabrasil.com.br/
+host: localhost:3333
+basePath: /
+securityDefinitions: {}
+schemes:
+- http
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /profile-template:
+    get:
+      description: Buscar template de perfil
+      summary: Buscar template de perfil
+      tags:
+      - Perfil
+      operationId: Buscartemplatedeperfil
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar templates
+      summary: Criartemplates
+      tags:
+      - Templates
+      operationId: Criartemplates
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriartemplatesRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /profile:
+    get:
+      description: Buscar perfil
+      summary: Buscarperfil
+      tags:
+      - Perfil
+      operationId: Buscarperfil
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar perfil
+      summary: Criarperfil
+      tags:
+      - Perfil
+      operationId: Criarperfil
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarperfilRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /profile/112:
+    delete:
+      description: Deletar perfil
+      summary: Deletarperfil
+      tags:
+      - Perfil
+      operationId: Deletarperfil
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarperfilRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /profile/120:
+    patch:
+      description: Editar perfil
+      summary: Editarperfil
+      tags:
+      - Perfil
+      operationId: Editarperfil
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarperfilRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /profile-template/4:
+    patch:
+      description: Editar templates
+      summary: Editartemplates
+      tags:
+      - Templates
+      operationId: Editartemplates
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditartemplatesRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    delete:
+      description: Deletar templates
+      summary: Deletartemplates
+      tags:
+      - Templates
+      operationId: Deletartemplates
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletartemplatesRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office-op:
+    get:
+      description: Obter Todos Escritórios
+      summary: ObterTodosEscritórios
+      tags:
+      - Office OP
+      operationId: ObterTodosEscritórios
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: company_id
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar Operação
+      summary: CriarOperação
+      tags:
+      - Office OP
+      operationId: CriarOperação
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarOpera%C3%A7%C3%A3oRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office-op/187:
+    delete:
+      description: Deletar Operação
+      summary: DeletarOperação
+      tags:
+      - Office OP
+      operationId: DeletarOperação
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarOpera%C3%A7%C3%A3oRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office-op/189:
+    patch:
+      description: Editar Operação
+      summary: EditarOperação
+      tags:
+      - Office OP
+      operationId: EditarOperação
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarOpera%C3%A7%C3%A3oRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office-op/{id}:
+    get:
+      description: Obter Escritório por Id
+      summary: ObterEscritórioporId
+      tags:
+      - Office OP
+      operationId: ObterEscritórioporId
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: id
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /operation:
+    get:
+      description: Obter Escritórios Relacionados
+      summary: ObterEscritóriosRelacionados
+      tags:
+      - Office OP
+      operationId: ObterEscritóriosRelacionados
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: related_devices
+        in: query
+        required: true
+        type: boolean
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /user:
+    get:
+      description: Obter Usuários do Escritório
+      summary: ObterUsuáriosdoEscritório
+      tags:
+      - Office OP
+      operationId: ObterUsuáriosdoEscritório
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: company_id
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: operator
+        in: query
+        required: true
+        type: boolean
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar usuário
+      summary: Criarusuário
+      tags:
+      - Usuário
+      operationId: Criarusuário
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Criarusu%C3%A1rioRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office/group/related:
+    get:
+      description: Obtém os escritórios relacionados a um grupo.
+      summary: GetGroupRelatedOffices
+      tags:
+      - Grupo Agência
+      operationId: GetGroupRelatedOffices
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: related_devices
+        in: query
+        required: true
+        type: boolean
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /user/group:
+    get:
+      description: Obtém todos os usuários pertencentes a um grupo.
+      summary: GetUsersGroup
+      tags:
+      - Grupo Agência
+      operationId: GetUsersGroup
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /group:
+    get:
+      description: Obtém informações de um grupo de agências pelo ID fornecido.
+      summary: GetGroupAgencyByID
+      tags:
+      - Grupo Agência
+      operationId: GetGroupAgencyByID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar Agência
+      summary: CriarAgência
+      tags:
+      - Grupo Agência
+      operationId: CriarAgência
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarAg%C3%AAnciaRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /group/25:
+    delete:
+      description: Deletar Agência
+      summary: DeletarAgência
+      tags:
+      - Grupo Agência
+      operationId: DeletarAgência
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarAg%C3%AAnciaRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /group/26:
+    patch:
+      description: Editar Agência
+      summary: EditarAgência
+      tags:
+      - Grupo Agência
+      operationId: EditarAgência
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarAg%C3%AAnciaRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /ambient/{id}:
+    get:
+      description: Obter Ambiente por ID
+      summary: ObterAmbienteporID
+      tags:
+      - Ambiente
+      operationId: ObterAmbienteporID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: id
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /ambient:
+    get:
+      description: Obter todos os Ambientes
+      summary: ObtertodososAmbientes
+      tags:
+      - Ambiente
+      operationId: ObtertodososAmbientes
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar ambiente
+      summary: Criarambiente
+      tags:
+      - Ambiente
+      operationId: Criarambiente
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarambienteRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /ambient/7:
+    patch:
+      description: Editar ambiente
+      summary: Editarambiente
+      tags:
+      - Ambiente
+      operationId: Editarambiente
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /ambient/55:
+    delete:
+      description: Excluir ambiente
+      summary: Excluirambiente
+      tags:
+      - Ambiente
+      operationId: Excluirambiente
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /holiday:
+    get:
+      description: Buscar feriados
+      summary: Buscarferiados
+      tags:
+      - Feriado
+      operationId: Buscarferiados
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar Feriado
+      summary: CriarFeriado
+      tags:
+      - Feriado
+      operationId: CriarFeriado
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarFeriadoRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /holiday/6020:
+    patch:
+      description: Editar Feriado
+      summary: EditarFeriado
+      tags:
+      - Feriado
+      operationId: EditarFeriado
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarFeriadoRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /holiday/6021:
+    delete:
+      description: Deletar Feriado
+      summary: DeletarFeriado
+      tags:
+      - Feriado
+      operationId: DeletarFeriado
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarFeriadoRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/rule:
+    post:
+      description: Criar regra
+      summary: Criarregra
+      tags:
+      - Alarmes
+      operationId: Criarregra
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarregraRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    get:
+      description: Buscar regra
+      summary: Buscarregra
+      tags:
+      - Alarmes
+      operationId: Buscarregra
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/rule/231:
+    patch:
+      description: Editar regra
+      summary: Editarregra
+      tags:
+      - Alarmes
+      operationId: Editarregra
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarregraRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/status:
+    post:
+      description: Criar status
+      summary: Criarstatus
+      tags:
+      - Alarmes
+      operationId: Criarstatus
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarstatusRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    delete:
+      description: Deletar status
+      summary: Deletarstatus
+      tags:
+      - Alarmes
+      operationId: Deletarstatus
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarstatusRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/status/8:
+    patch:
+      description: Editar status
+      summary: Editarstatus
+      tags:
+      - Alarmes
+      operationId: Editarstatus
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarstatusRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/priority:
+    post:
+      description: Criar criticidade
+      summary: Criarcriticidade
+      tags:
+      - Alarmes
+      operationId: Criarcriticidade
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarcriticidadeRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/priority/123:
+    patch:
+      description: Editar criticidade
+      summary: Editarcriticidade
+      tags:
+      - Alarmes
+      operationId: Editarcriticidade
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarcriticidadeRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/messages:
+    post:
+      description: Criar mensagem
+      summary: Criarmensagem
+      tags:
+      - Alarmes
+      operationId: Criarmensagem
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarmensagemRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/messages/110:
+    delete:
+      description: Deletar mensagem
+      summary: Deletarmensagem
+      tags:
+      - Alarmes
+      operationId: Deletarmensagem
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarmensagemRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    patch:
+      description: Editar mensagem
+      summary: Editarmensagem
+      tags:
+      - Alarmes
+      operationId: Editarmensagem
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarmensagemRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/manualalarm:
+    post:
+      description: Criar manual alarme
+      summary: Criarmanualalarme
+      tags:
+      - Alarmes
+      operationId: Criarmanualalarme
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarmanualalarmeRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  //localhost:3333/api/alarm-deactivated:
+    get:
+      description: Alarme desativado
+      summary: Alarmedesativado
+      tags:
+      - Alarmes
+      operationId: Alarmedesativado
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /workflow/workflow:
+    get:
+      description: Obter Todos os Fluxos de Trabalho
+      summary: ObterTodososFluxosdeTrabalho
+      tags:
+      - Workflow
+      operationId: ObterTodososFluxosdeTrabalho
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: company_id
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar workflow
+      summary: Criarworkflow
+      tags:
+      - Workflow
+      operationId: Criarworkflow
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarworkflowRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /workflow/workflow/253:
+    delete:
+      description: Deletar workflow
+      summary: Deletarworkflow
+      tags:
+      - Workflow
+      operationId: Deletarworkflow
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarworkflowRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /workflow/workflow/250:
+    patch:
+      description: Editar workflow
+      summary: Editarworkflow
+      tags:
+      - Workflow
+      operationId: Editarworkflow
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarworkflowRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /workflow/transaction-history:
+    get:
+      description: Obter Todos os Registros de Histórico de Fluxo de Trabalho
+      summary: ObterTodososRegistrosdeHistóricodeFluxodeTrabalho
+      tags:
+      - Workflow
+      operationId: ObterTodososRegistrosdeHistóricodeFluxodeTrabalho
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: company_id
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /workflow/set-all-steps:
+    patch:
+      description: Editar passos
+      summary: Editarpassos
+      tags:
+      - Workflow
+      operationId: Editarpassos
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: workflow
+        in: query
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          type: array
+          items:
+            $ref: '#/definitions/EditarpassosRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /workflow/get-workflow:
+    get:
+      description: Obter Todas as Transações de Fluxo de Trabalho
+      summary: ObterTodasasTransaçõesdeFluxodeTrabalho
+      tags:
+      - Workflow
+      operationId: ObterTodasasTransaçõesdeFluxodeTrabalho
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: company_id
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /workflow/activity:
+    get:
+      description: Obter Todas as Atividades de Fluxo de Trabalho
+      summary: ObterTodasasAtividadesdeFluxodeTrabalho
+      tags:
+      - Workflow
+      operationId: ObterTodasasAtividadesdeFluxodeTrabalho
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: company_id
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar atividade
+      summary: Criaratividade
+      tags:
+      - Workflow
+      operationId: Criaratividade
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriaratividadeRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /workflow/activity/211:
+    delete:
+      description: Deletar atividade
+      summary: Deletaratividade
+      tags:
+      - Workflow
+      operationId: Deletaratividade
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletaratividadeRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /workflow/activity/212:
+    patch:
+      description: Editar atividade
+      summary: Editaratividade
+      tags:
+      - Workflow
+      operationId: Editaratividade
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditaratividadeRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system-settings:
+    get:
+      description: Buscar Serviços por nome
+      summary: BuscarServiçospornome
+      tags:
+      - Configurações
+      operationId: BuscarServiçospornome
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system-settings/1:
+    get:
+      description: Buscar Serviços by ID
+      summary: BuscarServiçosbyID
+      tags:
+      - Configurações
+      operationId: BuscarServiçosbyID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    patch:
+      description: Editar Serviços
+      summary: EditarServiços
+      tags:
+      - Configurações
+      operationId: EditarServiços
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarServi%C3%A7osRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /patrol/patrol:
+    get:
+      description: Patrulha
+      summary: Patrulha
+      tags:
+      - Ronda
+      operationId: Patrulha
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar Rota
+      summary: CriarRota
+      tags:
+      - Ronda
+      operationId: CriarRota
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarRotaRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /workflow/step:
+    get:
+      description: Etapa de patrulha
+      summary: Etapadepatrulha
+      tags:
+      - Ronda
+      operationId: Etapadepatrulha
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /patrol/user:
+    get:
+      description: Buscar patrula do usuario logado
+      summary: Buscarpatruladousuariologado
+      tags:
+      - Ronda
+      operationId: Buscarpatruladousuariologado
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /patrol/step-execution:
+    get:
+      description: Execução da etapa de patrulha
+      summary: Execuçãodaetapadepatrulha
+      tags:
+      - Ronda
+      operationId: Execuçãodaetapadepatrulha
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /patrol/step:
+    post:
+      description: Criar rotina
+      summary: Criarrotina
+      tags:
+      - Ronda
+      operationId: Criarrotina
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarrotinaRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /patrol/patrol/11:
+    patch:
+      description: Editar rota
+      summary: Editarrota
+      tags:
+      - Ronda
+      operationId: Editarrota
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarrotaRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /patrol/question:
+    get:
+      description: Buscar todos questionários
+      summary: Buscartodosquestionários
+      tags:
+      - Questionário
+      operationId: Buscartodosquestionários
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar questionario
+      summary: Criarquestionario
+      tags:
+      - Questionário
+      operationId: Criarquestionario
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarquestionarioRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /patrol/question/5:
+    delete:
+      description: Deletar questionario
+      summary: Deletarquestionario
+      tags:
+      - Questionário
+      operationId: Deletarquestionario
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarquestionarioRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /patrol/question/4:
+    patch:
+      description: Editar questionario
+      summary: Editarquestionario
+      tags:
+      - Questionário
+      operationId: Editarquestionario
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarquestionarioRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /patrol/justification:
+    post:
+      description: Criar justificativas
+      summary: Criarjustificativas
+      tags:
+      - Justificativas
+      operationId: Criarjustificativas
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarjustificativasRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    get:
+      description: Buscar justificativas
+      summary: Buscarjustificativas
+      tags:
+      - Justificativas
+      operationId: Buscarjustificativas
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /patrol/justification/3:
+    delete:
+      description: Deletar justificativas
+      summary: Deletarjustificativas
+      tags:
+      - Justificativas
+      operationId: Deletarjustificativas
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarjustificativasRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /patrol/justification/2:
+    patch:
+      description: Editar justificativa
+      summary: Editarjustificativa
+      tags:
+      - Justificativas
+      operationId: Editarjustificativa
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarjustificativaRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /user/278:
+    get:
+      description: Buscar dados do usuário
+      summary: Buscardadosdousuário
+      tags:
+      - Usuário
+      operationId: Buscardadosdousuário
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/x-www-form-urlencoded
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/x-www-form-urlencoded
+        type: string
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    patch:
+      description: Atualizar usuário
+      summary: Atualizarusuário
+      tags:
+      - Usuário
+      operationId: Atualizarusuário
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Atualizarusu%C3%A1rioRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /user/3941:
+    patch:
+      description: Editar cadastramento de usuário
+      summary: Editarcadastramentodeusuário
+      tags:
+      - Usuário
+      operationId: Editarcadastramentodeusuário
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Editarcadastramentodeusu%C3%A1rioRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /user/3940:
+    delete:
+      description: Deletar cadastramento de usuário
+      summary: Deletarcadastramentodeusuário
+      tags:
+      - Usuário
+      operationId: Deletarcadastramentodeusuário
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Deletarcadastramentodeusu%C3%A1rioRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  //localhost:3333/api/office/300:
+    patch:
+      description: Atualizar agencia
+      summary: Atualizaragencia
+      tags:
+      - Agencias
+      operationId: Atualizaragencia
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: office_id
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          example: 'github.com/Vyoam/InsomniaToPostmanFormat: Unsupported body type undefined'
+          type: string
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office/options/city:
+    get:
+      description: Buscar cidades
+      summary: Buscarcidades
+      tags:
+      - Agencias
+      operationId: Buscarcidades
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: example
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office:
+    get:
+      description: Get All Offices by Name
+      summary: GetAllOfficesbyName
+      tags:
+      - Agencias
+      operationId: GetAllOfficesbyName
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: name
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar agencia
+      summary: Criaragencia
+      tags:
+      - Agencias
+      operationId: Criaragencia
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriaragenciaRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office/options:
+    get:
+      description: Buscar Zonas
+      summary: BuscarZonas
+      tags:
+      - Agencias
+      operationId: BuscarZonas
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office-report:
+    get:
+      description: Relatório de agencia
+      summary: Relatóriodeagencia
+      tags:
+      - Agencias
+      operationId: Relatóriodeagencia
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /plan:
+    get:
+      description: Planta da agencia
+      summary: Plantadaagencia
+      tags:
+      - Agencias
+      operationId: Plantadaagencia
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office/record:
+    get:
+      description: Get All Office Record Report
+      summary: GetAllOfficeRecordReport
+      tags:
+      - Agencias
+      operationId: GetAllOfficeRecordReport
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: company_id
+        in: query
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office/devices/export:
+    get:
+      description: Relatorio equipamentos
+      summary: Relatorioequipamentos
+      tags:
+      - Agencias
+      operationId: Relatorioequipamentos
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: company_id
+        in: query
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office/{office_id}/:
+    delete:
+      description: Excluir agencia
+      summary: Excluiragencia
+      tags:
+      - Agencias
+      operationId: Excluiragencia
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: office_id
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office/1829:
+    delete:
+      description: Deletar ponto de venda
+      summary: Deletarpontodevenda
+      tags:
+      - Agencias
+      operationId: Deletarpontodevenda
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarpontodevendaRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    patch:
+      description: Editar ponto de venda
+      summary: Editarpontodevenda
+      tags:
+      - Agencias
+      operationId: Editarpontodevenda
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarpontodevendaRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  //localhost:3333/api/event/operation:
+    get:
+      description: Operação
+      summary: Operação
+      tags:
+      - Event
+      operationId: Operação
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  //localhost:3333/api/plan-device:
+    get:
+      description: Dispositivo de plano
+      summary: Dispositivodeplano
+      tags:
+      - Equipamento
+      operationId: Dispositivodeplano
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /device:
+    get:
+      description: Dispositivo
+      summary: Dispositivo
+      tags:
+      - Equipamento
+      operationId: Dispositivo
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /operation-status:
+    get:
+      description: Status da operação
+      summary: Statusdaoperação
+      tags:
+      - Operação
+      operationId: Statusdaoperação
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Cadastrar operação
+      summary: Cadastraroperação
+      tags:
+      - Planta
+      operationId: Cadastraroperação
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Cadastraropera%C3%A7%C3%A3oRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /actions:
+    get:
+      description: Ações
+      summary: Ações
+      tags:
+      - Açoes
+      operationId: Ações
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/controlid-facial:
+    get:
+      description: Controle do sistema facial
+      summary: Controledosistemafacial
+      tags:
+      - Control ID
+      operationId: Controledosistemafacial
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Cadastrar face id
+      summary: Cadastrarfaceid
+      tags:
+      - Control ID
+      operationId: Cadastrarfaceid
+      deprecated: false
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+    patch:
+      description: Cadastrar face id1
+      summary: Cadastrarfaceid1
+      tags:
+      - Control ID
+      operationId: Cadastrarfaceid1
+      deprecated: false
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /:
+    get:
+      description: Lista control id - BIOMETRIA
+      summary: Listacontrolid-BIOMETRIA
+      tags:
+      - Control ID
+      operationId: Listacontrolid-BIOMETRIA
+      deprecated: false
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+    patch:
+      description: Editar biometria
+      summary: Editarbiometria
+      tags:
+      - Control ID
+      operationId: Editarbiometria
+      deprecated: false
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+    post:
+      description: Criar clientes
+      summary: Criarclientes
+      tags:
+      - Sigma Cloud
+      operationId: Criarclientes
+      deprecated: false
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /system/controlid:
+    post:
+      description: Criar biometria
+      summary: Criarbiometria
+      tags:
+      - Control ID
+      operationId: Criarbiometria
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarbiometriaRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/alarmmultiple:
+    get:
+      description: Obter todos os Alarmes Múltiplos
+      summary: ObtertodososAlarmesMúltiplos
+      tags:
+      - Alarmes multiplos
+      operationId: ObtertodososAlarmesMúltiplos
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar Alarme Múltiplo
+      summary: CriarAlarmeMúltiplo
+      tags:
+      - Alarmes multiplos
+      operationId: CriarAlarmeMúltiplo
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          example: {}
+          type: object
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/alarmmultiple/2:
+    get:
+      description: Obter Alarme Múltiplo por ID
+      summary: ObterAlarmeMúltiploporID
+      tags:
+      - Alarmes multiplos
+      operationId: ObterAlarmeMúltiploporID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/alarmmultiple/4:
+    patch:
+      description: Atualizar Alarme Múltiplo
+      summary: AtualizarAlarmeMúltiplo
+      tags:
+      - Alarmes multiplos
+      operationId: AtualizarAlarmeMúltiplo
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          example: {}
+          type: object
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/pentasis/device/4:
+    patch:
+      description: Editar dispositivo
+      summary: Editardispositivo
+      tags:
+      - Pentasis
+      operationId: Editardispositivo
+      deprecated: false
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /system/intelbrasaccesscontrol-user:
+    get:
+      description: Obter Todos os Usuários de Controle de Acesso Intelbras
+      summary: ObterTodososUsuáriosdeControledeAcessoIntelbras
+      tags:
+      - INTELBRAS
+      operationId: ObterTodososUsuáriosdeControledeAcessoIntelbras
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Cadastrar usuário
+      summary: Cadastrarusuário
+      tags:
+      - Intelbras
+      operationId: Cadastrarusuário
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Cadastrarusu%C3%A1rioRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrasaccesscontrol-user/{device_id}:
+    patch:
+      description: Atualizar Usuário de Controle de Acesso Intelbras
+      summary: AtualizarUsuáriodeControledeAcessoIntelbras
+      tags:
+      - INTELBRAS
+      operationId: AtualizarUsuáriodeControledeAcessoIntelbras
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: device_id
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    delete:
+      description: Excluir Usuário de Controle de Acesso Intelbras
+      summary: ExcluirUsuáriodeControledeAcessoIntelbras
+      tags:
+      - INTELBRAS
+      operationId: ExcluirUsuáriodeControledeAcessoIntelbras
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: device_id
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    get:
+      description: Obter Usuário de Controle de Acesso Intelbras por ID
+      summary: ObterUsuáriodeControledeAcessoIntelbrasporID
+      tags:
+      - INTELBRAS
+      operationId: ObterUsuáriodeControledeAcessoIntelbrasporID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: device_id
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /userdevices/controlid:
+    post:
+      description: criar cadastro de usuario
+      summary: criarcadastrodeusuario
+      tags:
+      - Controle de acesso
+      operationId: criarcadastrodeusuario
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/criarcadastrodeusuariorequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    delete:
+      description: Deletar cadastro de usuario
+      summary: Deletarcadastrodeusuario
+      tags:
+      - Controle de acesso
+      operationId: Deletarcadastrodeusuario
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarcadastrodeusuarioRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /userdevices/controlid/62:
+    patch:
+      description: Editar cadastro de usuario
+      summary: Editarcadastrodeusuario
+      tags:
+      - Controle de acesso
+      operationId: Editarcadastrodeusuario
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarcadastrodeusuarioRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/scaticctv:
+    get:
+      description: Lista de equipamentos scati
+      summary: Listadeequipamentosscati
+      tags:
+      - CFTV
+      operationId: Listadeequipamentosscati
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Cadastrar equipamento
+      summary: PostCadastrarequipamento1
+      tags:
+      - Scati
+      operationId: PostCadastrarequipamento1
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CadastrarequipamentoRequest1'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /operation-status/3722:
+    delete:
+      description: Cadastrar operação Copy
+      summary: CadastraroperaçãoCopy
+      tags:
+      - Planta
+      operationId: CadastraroperaçãoCopy
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Cadastraropera%C3%A7%C3%A3oCopyRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/transaction:
+    get:
+      description: Buscar ordem prioridade
+      summary: Buscarordemprioridade
+      tags:
+      - Sinóptico
+      operationId: Buscarordemprioridade
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: order_by
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: balancer
+        in: query
+        required: true
+        type: boolean
+        description: ''
+      - name: office
+        in: query
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: page
+        in: query
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: page_size
+        in: query
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/bosch-monitor-panel:
+    post:
+      description: Cadastrar bosch
+      summary: Cadastrarbosch
+      tags:
+      - Sinóptico
+      operationId: Cadastrarbosch
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /event/alarms:
+    get:
+      description: Buscar status equipamentos
+      summary: Buscarstatusequipamentos
+      tags:
+      - Sinóptico
+      operationId: Buscarstatusequipamentos
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: alarmed
+        in: query
+        required: true
+        type: boolean
+        description: ''
+      - name: office
+        in: query
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /office/1821:
+    get:
+      description: Buscar office
+      summary: Buscaroffice
+      tags:
+      - Sinóptico
+      operationId: Buscaroffice
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrasaccesscontrol:
+    get:
+      description: Obter Todos os Dispositivos de Controle de Acesso Intelbras
+      summary: ObterTodososDispositivosdeControledeAcessoIntelbras
+      tags:
+      - Intelbras
+      operationId: ObterTodososDispositivosdeControledeAcessoIntelbras
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar Dispositivo de Controle de Acesso Intelbras
+      summary: CriarDispositivodeControledeAcessoIntelbras
+      tags:
+      - Intelbras
+      operationId: CriarDispositivodeControledeAcessoIntelbras
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrasaccesscontrol/{id}:
+    get:
+      description: Obter Dispositivo de Controle de Acesso Intelbras por ID
+      summary: ObterDispositivodeControledeAcessoIntelbrasporID
+      tags:
+      - Intelbras
+      operationId: ObterDispositivodeControledeAcessoIntelbrasporID
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: id
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrasaccesscontrol/{device_id}/:
+    patch:
+      description: Atualizar Dispositivo de Controle de Acesso Intelbras
+      summary: AtualizarDispositivodeControledeAcessoIntelbras
+      tags:
+      - Intelbras
+      operationId: AtualizarDispositivodeControledeAcessoIntelbras
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: device_id
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrasaccesscontrol-server:
+    get:
+      description: Obter Todos os Servidores do Intelbras Access Control
+      summary: ObterTodososServidoresdoIntelbrasAccessControl
+      tags:
+      - Intelbras
+      operationId: ObterTodososServidoresdoIntelbrasAccessControl
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    post:
+      description: Criar Servidor do Intelbras Access Control
+      summary: CriarServidordoIntelbrasAccessControl
+      tags:
+      - Intelbras
+      operationId: CriarServidordoIntelbrasAccessControl
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          example: '{{data}}'
+          type: string
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrasaccesscontrol-server/{device_id}:
+    patch:
+      description: Atualizar Servidor do Intelbras Access Control
+      summary: AtualizarServidordoIntelbrasAccessControl
+      tags:
+      - Intelbras
+      operationId: AtualizarServidordoIntelbrasAccessControl
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          example: '{{data}}'
+          type: string
+      - name: device_id
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    delete:
+      description: Excluir Servidor do Intelbras Access Control
+      summary: ExcluirServidordoIntelbrasAccessControl
+      tags:
+      - Intelbras
+      operationId: ExcluirServidordoIntelbrasAccessControl
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: device_id
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrascctv:
+    post:
+      description: Cadastrar equipamento
+      summary: Cadastrarequipamento
+      tags:
+      - Intelbras
+      operationId: Cadastrarequipamento
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CadastrarequipamentoRequest2'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrascctv-face-repository-type:
+    post:
+      description: Cadastrar tipo
+      summary: Cadastrartipo
+      tags:
+      - Intelbras
+      operationId: Cadastrartipo
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CadastrartipoRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrascctv-face-repository-type/6:
+    patch:
+      description: Editar tipo
+      summary: Editartipo
+      tags:
+      - Intelbras
+      operationId: Editartipo
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditartipoRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrascctv-face-repository:
+    post:
+      description: Cadastrar regra facial
+      summary: Cadastrarregrafacial
+      tags:
+      - Intelbras
+      operationId: Cadastrarregrafacial
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CadastrarregrafacialRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrascctv-face-repository/4:
+    patch:
+      description: Editar regra facial
+      summary: Editarregrafacial
+      tags:
+      - Intelbras
+      operationId: Editarregrafacial
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarregrafacialRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrascctv-vms-connect/1:
+    patch:
+      description: Editar configurações
+      summary: Editarconfigurações
+      tags:
+      - Intelbras
+      operationId: Editarconfigurações
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Editarconfigura%C3%A7%C3%B5esRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /employee/check-point-settings/1:
+    patch:
+      description: Editar hora do ponto
+      summary: Editarhoradoponto
+      tags:
+      - Intelbras
+      operationId: Editarhoradoponto
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarhoradopontoRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrasaccesscontrol-server/1:
+    patch:
+      description: Editar anfitrião servidor
+      summary: Editaranfitriãoservidor
+      tags:
+      - Intelbras
+      operationId: Editaranfitriãoservidor
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Editaranfitri%C3%A3oservidorRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/intelbrasaccesscontrol-user/3:
+    patch:
+      description: Editar usuário
+      summary: Editarusuário
+      tags:
+      - Intelbras
+      operationId: Editarusuário
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Editarusu%C3%A1rioRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/selfdefense-panelschedule/682:
+    patch:
+      description: Editar auto defesa
+      summary: Editarautodefesa
+      tags:
+      - Programação Horária
+      operationId: Editarautodefesa
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarautodefesaRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/selfdefense:
+    post:
+      description: criar equipamentos
+      summary: criarequipamentos
+      tags:
+      - Auto Defesa
+      operationId: criarequipamentos
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/criarequipamentosrequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/selfdefense/629:
+    patch:
+      description: editar equipamentos
+      summary: editarequipamentos
+      tags:
+      - Auto Defesa
+      operationId: editarequipamentos
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/editarequipamentosrequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/bosch-server:
+    post:
+      description: Criar servidor
+      summary: Criarservidor
+      tags:
+      - Bosch Mode 2
+      operationId: Criarservidor
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarservidorRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/bosch-server/13:
+    delete:
+      description: Deletar servidor
+      summary: Deletarservidor
+      tags:
+      - Bosch Mode 2
+      operationId: Deletarservidor
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarservidorRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/bosch-server/11:
+    patch:
+      description: Editar servidor
+      summary: Editarservidor
+      tags:
+      - Bosch Mode 2
+      operationId: Editarservidor
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarservidorRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/bosch:
+    post:
+      description: Criar equipamento
+      summary: Criarequipamento
+      tags:
+      - Bosch Mode 2
+      operationId: Criarequipamento
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarequipamentoRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    delete:
+      description: Deletar equipamento
+      summary: Deletarequipamento
+      tags:
+      - Bosch Mode 2
+      operationId: Deletarequipamento
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarequipamentoRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/bosch/637:
+    patch:
+      description: Editar equipamento
+      summary: Editarequipamento
+      tags:
+      - Bosch Mode 2
+      operationId: Editarequipamento
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarequipamentoRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/boschreceiver:
+    post:
+      description: Criar bosch receptora
+      summary: Criarboschreceptora
+      tags:
+      - Bosch Receptora
+      operationId: Criarboschreceptora
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarboschreceptoraRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/boschreceiver/14:
+    delete:
+      description: Deletar bosch receptora
+      summary: Deletarboschreceptora
+      tags:
+      - Bosch Receptora
+      operationId: Deletarboschreceptora
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarboschreceptoraRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/boschreceiver/13:
+    patch:
+      description: Editar bosch receptora
+      summary: Editarboschreceptora
+      tags:
+      - Bosch Receptora
+      operationId: Editarboschreceptora
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarboschreceptoraRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/boschreceiver-device:
+    post:
+      description: Cadastrar equipamento
+      summary: PostCadastrarequipamento
+      tags:
+      - Bosch Receptora
+      operationId: PostCadastrarequipamento
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CadastrarequipamentoRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+    delete:
+      description: Deletar equipamento
+      summary: DeleteDeletarequipamento
+      tags:
+      - Bosch Receptora
+      operationId: DeleteDeletarequipamento
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/DeletarequipamentoRequest1'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/boschreceiver-device/1081:
+    patch:
+      description: Editar equipamento
+      summary: PatchEditarequipamento
+      tags:
+      - Bosch Receptora
+      operationId: PatchEditarequipamento
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarequipamentoRequest1'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /system/scaticctv/17:
+    patch:
+      description: Editar equipamento
+      summary: PatchEditarequipamento1
+      tags:
+      - Scati
+      operationId: PatchEditarequipamento1
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarequipamentoRequest2'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /esparta-type:
+    post:
+      description: Criar ativo
+      summary: Criarativo
+      tags:
+      - Rastreador
+      operationId: Criarativo
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/CriarativoRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /esparta-type/3:
+    patch:
+      description: Editar ativo
+      summary: Editarativo
+      tags:
+      - Rastreador
+      operationId: Editarativo
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/EditarativoRequest'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      security: []
+  /auth:
+    post:
+      description: login-user
+      summary: login-user
+      tags:
+      - Misc
+      operationId: login-user
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: username
+        in: query
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: password
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/login-user-request'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+definitions:
+  CriarperfilRequest:
+    title: CriarperfilRequest
+    type: object
+    properties:
+      user:
+        type: array
+        items:
+          type: string
+      template:
+        type: string
+      priority:
+        type: integer
+        format: int32
+      name:
+        type: string
+    required:
+    - user
+    - template
+    - priority
+    - name
+  DeletarperfilRequest:
+    title: DeletarperfilRequest
+    type: object
+    properties:
+      user:
+        type: array
+        items:
+          type: string
+      template:
+        type: string
+      priority:
+        type: integer
+        format: int32
+      name:
+        type: string
+    required:
+    - user
+    - template
+    - priority
+    - name
+  EditarperfilRequest:
+    title: EditarperfilRequest
+    type: object
+    properties:
+      user:
+        type: array
+        items:
+          type: string
+      template:
+        $ref: '#/definitions/Template'
+      priority:
+        type: integer
+        format: int32
+      name:
+        type: string
+      template_id:
+        type: integer
+        format: int32
+      active:
+        type: boolean
+      permissions:
+        type: array
+        items:
+          $ref: '#/definitions/Permission'
+    required:
+    - user
+    - template
+    - priority
+    - name
+    - template_id
+    - active
+    - permissions
+  Template:
+    title: Template
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int32
+      permissions:
+        type: array
+        items:
+          $ref: '#/definitions/Permission'
+      permissions_tree:
+        type: array
+        items:
+          $ref: '#/definitions/PermissionsTree'
+      name:
+        type: string
+      text:
+        type: string
+      value:
+        $ref: '#/definitions/Value'
+    required:
+    - id
+    - permissions
+    - permissions_tree
+    - name
+    - text
+    - value
+  Permission:
+    title: Permission
+    type: object
+    properties:
+      rules:
+        type: string
+      description:
+        type: string
+      name:
+        type: string
+    required:
+    - rules
+    - description
+    - name
+  PermissionsTree:
+    title: PermissionsTree
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      icon:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child'
+      $checked:
+        type: boolean
+    required:
+    - text
+    - icon
+    - children
+    - $checked
+  Child:
+    title: Child
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child1'
+      $checked:
+        type: boolean
+      name:
+        type: string
+      options:
+        type: array
+        items:
+          $ref: '#/definitions/Option'
+      rules:
+        type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Child1:
+    title: Child1
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child2'
+      $checked:
+        type: boolean
+      name:
+        type: string
+      rules:
+        type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Child2:
+    title: Child2
+    type: object
+    properties:
+      text:
+        type: string
+      name:
+        type: string
+      rules:
+        type: string
+      $checked:
+        type: boolean
+      dependencies:
+        type: array
+        items:
+          type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child3'
+    required:
+    - text
+    - name
+    - rules
+    - $checked
+  Child3:
+    title: Child3
+    type: object
+    properties:
+      text:
+        type: string
+      name:
+        type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+      rules:
+        type: string
+      $checked:
+        type: boolean
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child4'
+      remove_permissions:
+        type: array
+        items:
+          type: string
+      options:
+        type: array
+        items:
+          $ref: '#/definitions/Option'
+    required:
+    - text
+    - name
+    - dependencies
+    - rules
+    - $checked
+  Child4:
+    title: Child4
+    example:
+      text: CFTV
+      type: actions
+      children:
+      - text: Intelbras
+        type: actions
+        children:
+        - text: Câmeras
+          type: actions
+          children:
+          - text: Visualizar
+            name: intelbras.show_cam
+            virtual_dependencies:
+            - office.view_ambient
+            - intelbras.view_intelbrascctv
+            - intelbras.view_cam
+            - plan.view_plan
+            - plan.view_plandevice
+            rules: null
+            $checked: false
+          $checked: false
+        - text: Gravação
+          type: actions
+          children:
+          - text: Visualizar
+            name: intelbras.show_cam_recording
+            dependencies:
+            - intelbras.show_cam
+            virtual_dependencies:
+            - office.view_ambient
+            - intelbras.view_intelbrascctv
+            - intelbras.view_cam
+            - plan.view_plan
+            - plan.view_plandevice
+            rules: null
+            $checked: false
+          $checked: false
+        $checked: false
+      - text: Scati
+        type: actions
+        children:
+        - text: Câmeras
+          type: actions
+          children:
+          - text: Visualizar
+            name: scati.show_cam
+            virtual_dependencies:
+            - office.view_ambient
+            - scati.view_scaticctv
+            - scati.view_cam
+            - plan.view_plan
+            - plan.view_plandevice
+            rules: null
+            $checked: false
+          $checked: false
+        $checked: false
+      - text: Sigma Image
+        type: actions
+        children:
+        - text: Câmeras
+          type: actions
+          children:
+          - text: Visualizar
+            name: segware.show_cam
+            virtual_dependencies:
+            - office.view_ambient
+            - segware.view_sigmaimage
+            - segware.view_camsigma
+            - plan.view_plan
+            - plan.view_plandevice
+            rules: null
+            $checked: false
+          $checked: false
+        $checked: false
+      $checked: false
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child5'
+      $checked:
+        type: boolean
+      name:
+        type: string
+      rules:
+        type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+      options:
+        type: array
+        items:
+          $ref: '#/definitions/Option'
+      dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Child5:
+    title: Child5
+    example:
+      text: Intelbras
+      type: actions
+      children:
+      - text: Câmeras
+        type: actions
+        children:
+        - text: Visualizar
+          name: intelbras.show_cam
+          virtual_dependencies:
+          - office.view_ambient
+          - intelbras.view_intelbrascctv
+          - intelbras.view_cam
+          - plan.view_plan
+          - plan.view_plandevice
+          rules: null
+          $checked: false
+        $checked: false
+      - text: Gravação
+        type: actions
+        children:
+        - text: Visualizar
+          name: intelbras.show_cam_recording
+          dependencies:
+          - intelbras.show_cam
+          virtual_dependencies:
+          - office.view_ambient
+          - intelbras.view_intelbrascctv
+          - intelbras.view_cam
+          - plan.view_plan
+          - plan.view_plandevice
+          rules: null
+          $checked: false
+        $checked: false
+      $checked: false
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child6'
+      $checked:
+        type: boolean
+      name:
+        type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+      rules:
+        type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Child6:
+    title: Child6
+    example:
+      text: Câmeras
+      type: actions
+      children:
+      - text: Visualizar
+        name: intelbras.show_cam
+        virtual_dependencies:
+        - office.view_ambient
+        - intelbras.view_intelbrascctv
+        - intelbras.view_cam
+        - plan.view_plan
+        - plan.view_plandevice
+        rules: null
+        $checked: false
+      $checked: false
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          type: object
+      $checked:
+        type: boolean
+      name:
+        type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+      rules:
+        type: string
+      vitual_dependencies:
+        type: array
+        items:
+          type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Option:
+    title: Option
+    example:
+      name: Operações
+      route: /operation/
+      filter: id
+      options:
+      - contain
+      - not_contain
+    type: object
+    properties:
+      name:
+        type: string
+      route:
+        type: string
+      filter:
+        type: string
+      options:
+        type: array
+        items:
+          type: string
+    required:
+    - name
+    - route
+    - filter
+    - options
+  Value:
+    title: Value
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int32
+      permissions:
+        type: array
+        items:
+          $ref: '#/definitions/Permission'
+      permissions_tree:
+        type: array
+        items:
+          $ref: '#/definitions/PermissionsTree1'
+      name:
+        type: string
+    required:
+    - id
+    - permissions
+    - permissions_tree
+    - name
+  PermissionsTree1:
+    title: PermissionsTree1
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      icon:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child7'
+      $checked:
+        type: boolean
+    required:
+    - text
+    - icon
+    - children
+    - $checked
+  Child7:
+    title: Child7
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child8'
+      $checked:
+        type: boolean
+      name:
+        type: string
+      options:
+        type: array
+        items:
+          $ref: '#/definitions/Option'
+      rules:
+        type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Child8:
+    title: Child8
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child9'
+      $checked:
+        type: boolean
+      name:
+        type: string
+      rules:
+        type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Child9:
+    title: Child9
+    type: object
+    properties:
+      text:
+        type: string
+      name:
+        type: string
+      rules:
+        type: string
+      $checked:
+        type: boolean
+      dependencies:
+        type: array
+        items:
+          type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child10'
+    required:
+    - text
+    - name
+    - rules
+    - $checked
+  Child10:
+    title: Child10
+    type: object
+    properties:
+      text:
+        type: string
+      name:
+        type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+      rules:
+        type: string
+      $checked:
+        type: boolean
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child11'
+      remove_permissions:
+        type: array
+        items:
+          type: string
+      options:
+        type: array
+        items:
+          $ref: '#/definitions/Option'
+    required:
+    - text
+    - name
+    - dependencies
+    - rules
+    - $checked
+  Child11:
+    title: Child11
+    example:
+      text: CFTV
+      type: actions
+      children:
+      - text: Intelbras
+        type: actions
+        children:
+        - text: Câmeras
+          type: actions
+          children:
+          - text: Visualizar
+            name: intelbras.show_cam
+            virtual_dependencies:
+            - office.view_ambient
+            - intelbras.view_intelbrascctv
+            - intelbras.view_cam
+            - plan.view_plan
+            - plan.view_plandevice
+            rules: null
+            $checked: false
+          $checked: false
+        - text: Gravação
+          type: actions
+          children:
+          - text: Visualizar
+            name: intelbras.show_cam_recording
+            dependencies:
+            - intelbras.show_cam
+            virtual_dependencies:
+            - office.view_ambient
+            - intelbras.view_intelbrascctv
+            - intelbras.view_cam
+            - plan.view_plan
+            - plan.view_plandevice
+            rules: null
+            $checked: false
+          $checked: false
+        $checked: false
+      - text: Scati
+        type: actions
+        children:
+        - text: Câmeras
+          type: actions
+          children:
+          - text: Visualizar
+            name: scati.show_cam
+            virtual_dependencies:
+            - office.view_ambient
+            - scati.view_scaticctv
+            - scati.view_cam
+            - plan.view_plan
+            - plan.view_plandevice
+            rules: null
+            $checked: false
+          $checked: false
+        $checked: false
+      - text: Sigma Image
+        type: actions
+        children:
+        - text: Câmeras
+          type: actions
+          children:
+          - text: Visualizar
+            name: segware.show_cam
+            virtual_dependencies:
+            - office.view_ambient
+            - segware.view_sigmaimage
+            - segware.view_camsigma
+            - plan.view_plan
+            - plan.view_plandevice
+            rules: null
+            $checked: false
+          $checked: false
+        $checked: false
+      $checked: false
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child12'
+      $checked:
+        type: boolean
+      name:
+        type: string
+      rules:
+        type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+      options:
+        type: array
+        items:
+          $ref: '#/definitions/Option'
+      dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Child12:
+    title: Child12
+    example:
+      text: Intelbras
+      type: actions
+      children:
+      - text: Câmeras
+        type: actions
+        children:
+        - text: Visualizar
+          name: intelbras.show_cam
+          virtual_dependencies:
+          - office.view_ambient
+          - intelbras.view_intelbrascctv
+          - intelbras.view_cam
+          - plan.view_plan
+          - plan.view_plandevice
+          rules: null
+          $checked: false
+        $checked: false
+      - text: Gravação
+        type: actions
+        children:
+        - text: Visualizar
+          name: intelbras.show_cam_recording
+          dependencies:
+          - intelbras.show_cam
+          virtual_dependencies:
+          - office.view_ambient
+          - intelbras.view_intelbrascctv
+          - intelbras.view_cam
+          - plan.view_plan
+          - plan.view_plandevice
+          rules: null
+          $checked: false
+        $checked: false
+      $checked: false
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          type: object
+      $checked:
+        type: boolean
+      name:
+        type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+      rules:
+        type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  CriartemplatesRequest:
+    title: CriartemplatesRequest
+    type: object
+    properties:
+      user:
+        type: array
+        items:
+          type: string
+      template:
+        type: string
+      priority:
+        type: integer
+        format: int32
+      name:
+        type: string
+      active:
+        type: boolean
+      permissions:
+        type: array
+        items:
+          type: string
+    required:
+    - user
+    - template
+    - priority
+    - name
+    - active
+    - permissions
+  EditartemplatesRequest:
+    title: EditartemplatesRequest
+    type: object
+    properties:
+      permissions:
+        type: array
+        items:
+          type: string
+      permissions_tree:
+        type: array
+        items:
+          $ref: '#/definitions/PermissionsTree2'
+      name:
+        type: string
+      active:
+        type: boolean
+    required:
+    - permissions
+    - permissions_tree
+    - name
+    - active
+  PermissionsTree2:
+    title: PermissionsTree2
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      icon:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child13'
+      $checked:
+        type: boolean
+    required:
+    - text
+    - icon
+    - children
+    - $checked
+  Child13:
+    title: Child13
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child14'
+      $checked:
+        type: boolean
+      name:
+        type: string
+      options:
+        type: array
+        items:
+          $ref: '#/definitions/Option'
+      rules:
+        type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Child14:
+    title: Child14
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child15'
+      $checked:
+        type: boolean
+      name:
+        type: string
+      rules:
+        type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Child15:
+    title: Child15
+    type: object
+    properties:
+      text:
+        type: string
+      name:
+        type: string
+      rules:
+        type: string
+      $checked:
+        type: boolean
+      dependencies:
+        type: array
+        items:
+          type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child16'
+    required:
+    - text
+    - name
+    - rules
+    - $checked
+  Child16:
+    title: Child16
+    type: object
+    properties:
+      text:
+        type: string
+      name:
+        type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+      rules:
+        type: string
+      $checked:
+        type: boolean
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child17'
+      remove_permissions:
+        type: array
+        items:
+          type: string
+      options:
+        type: array
+        items:
+          $ref: '#/definitions/Option'
+    required:
+    - text
+    - name
+    - dependencies
+    - rules
+    - $checked
+  Child17:
+    title: Child17
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child18'
+      $checked:
+        type: boolean
+      name:
+        type: string
+      rules:
+        type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+      options:
+        type: array
+        items:
+          $ref: '#/definitions/Option'
+      dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Child18:
+    title: Child18
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child19'
+      $checked:
+        type: boolean
+      name:
+        type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+      rules:
+        type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Child19:
+    title: Child19
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: string
+      children:
+        type: array
+        items:
+          $ref: '#/definitions/Child20'
+      $checked:
+        type: boolean
+      name:
+        type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+      rules:
+        type: string
+      vitual_dependencies:
+        type: array
+        items:
+          type: string
+      dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - $checked
+  Child20:
+    title: Child20
+    type: object
+    properties:
+      text:
+        type: string
+      name:
+        type: string
+      virtual_dependencies:
+        type: array
+        items:
+          type: string
+      rules:
+        type: string
+      $checked:
+        type: boolean
+      dependencies:
+        type: array
+        items:
+          type: string
+    required:
+    - text
+    - name
+    - virtual_dependencies
+    - rules
+    - $checked
+  DeletartemplatesRequest:
+    title: DeletartemplatesRequest
+    type: object
+    properties:
+      permissions:
+        type: array
+        items:
+          type: string
+      permissions_tree:
+        type: array
+        items:
+          $ref: '#/definitions/PermissionsTree2'
+      name:
+        type: string
+      active:
+        type: boolean
+    required:
+    - permissions
+    - permissions_tree
+    - name
+    - active
+  CriarOperaçãoRequest:
+    title: CriarOperaçãoRequest
+    example:
+      group_name: grupo-teste2
+      operation:
+      - 7
+      user:
+      - 3889
+    type: object
+    properties:
+      group_name:
+        type: string
+      operation:
+        type: array
+        items:
+          type: integer
+          format: int32
+      user:
+        type: array
+        items:
+          type: integer
+          format: int32
+    required:
+    - group_name
+    - operation
+    - user
+  DeletarOperaçãoRequest:
+    title: DeletarOperaçãoRequest
+    example:
+      user:
+      - 3889
+      operation:
+      - 7
+      group_name: grupo-test
+    type: object
+    properties:
+      user:
+        type: array
+        items:
+          type: integer
+          format: int32
+      operation:
+        type: array
+        items:
+          type: integer
+          format: int32
+      group_name:
+        type: string
+    required:
+    - user
+    - operation
+    - group_name
+  EditarOperaçãoRequest:
+    title: EditarOperaçãoRequest
+    example:
+      user:
+      - 3889
+      operation:
+      - 7
+      group_name: grupo-test
+    type: object
+    properties:
+      user:
+        type: array
+        items:
+          type: integer
+          format: int32
+      operation:
+        type: array
+        items:
+          type: integer
+          format: int32
+      group_name:
+        type: string
+    required:
+    - user
+    - operation
+    - group_name
+  CriarAgênciaRequest:
+    title: CriarAgênciaRequest
+    example:
+      group_name: grupo-teste
+      office:
+      - 1816
+      user:
+      - 3928
+    type: object
+    properties:
+      group_name:
+        type: string
+      office:
+        type: array
+        items:
+          type: integer
+          format: int32
+      user:
+        type: array
+        items:
+          type: integer
+          format: int32
+    required:
+    - group_name
+    - office
+    - user
+  DeletarAgênciaRequest:
+    title: DeletarAgênciaRequest
+    example:
+      group_name: grupo-teste
+      office:
+      - 1816
+      user:
+      - 3928
+    type: object
+    properties:
+      group_name:
+        type: string
+      office:
+        type: array
+        items:
+          type: integer
+          format: int32
+      user:
+        type: array
+        items:
+          type: integer
+          format: int32
+    required:
+    - group_name
+    - office
+    - user
+  EditarAgênciaRequest:
+    title: EditarAgênciaRequest
+    example:
+      group_name: grupo-teste
+      office:
+      - 1816
+      user:
+      - 3928
+    type: object
+    properties:
+      group_name:
+        type: string
+      office:
+        type: array
+        items:
+          type: integer
+          format: int32
+      user:
+        type: array
+        items:
+          type: integer
+          format: int32
+    required:
+    - group_name
+    - office
+    - user
+  CriarambienteRequest:
+    title: CriarambienteRequest
+    example:
+      name: test delete
+      order: '100'
+    type: object
+    properties:
+      name:
+        type: string
+      order:
+        type: string
+    required:
+    - name
+    - order
+  EditarFeriadoRequest:
+    title: EditarFeriadoRequest
+    type: object
+    properties:
+      date:
+        type: string
+      type_holiday:
+        type: integer
+        format: int32
+      city:
+        type: string
+      state:
+        type: integer
+        format: int32
+      country:
+        type: integer
+        format: int32
+      active:
+        type: boolean
+    required:
+    - date
+    - type_holiday
+    - city
+    - state
+    - country
+    - active
+  CriarFeriadoRequest:
+    title: CriarFeriadoRequest
+    type: object
+    properties:
+      date:
+        type: string
+      type_holiday:
+        type: integer
+        format: int32
+      city:
+        type: string
+      state:
+        type: integer
+        format: int32
+      country:
+        type: integer
+        format: int32
+      active:
+        type: boolean
+    required:
+    - date
+    - type_holiday
+    - city
+    - state
+    - country
+    - active
+  DeletarFeriadoRequest:
+    title: DeletarFeriadoRequest
+    type: object
+    properties:
+      date:
+        type: string
+      type_holiday:
+        type: integer
+        format: int32
+      city:
+        type: string
+      state:
+        type: integer
+        format: int32
+      country:
+        type: integer
+        format: int32
+      active:
+        type: boolean
+    required:
+    - date
+    - type_holiday
+    - city
+    - state
+    - country
+    - active
+  CriarregraRequest:
+    title: CriarregraRequest
+    type: object
+    properties:
+      system:
+        type: integer
+        format: int32
+      system_type:
+        type: integer
+        format: int32
+      event_type:
+        type: integer
+        format: int32
+      event_status:
+        type: integer
+        format: int32
+      value:
+        type: string
+      condition_save_alarm:
+        type: integer
+        format: int32
+      condition_save_log:
+        type: integer
+        format: int32
+      priority:
+        type: integer
+        format: int32
+      office_operation_range_id:
+        type: string
+      operation_condition:
+        type: string
+    required:
+    - system
+    - system_type
+    - event_type
+    - event_status
+    - value
+    - condition_save_alarm
+    - condition_save_log
+    - priority
+    - office_operation_range_id
+    - operation_condition
+  EditarregraRequest:
+    title: EditarregraRequest
+    type: object
+    properties:
+      system:
+        type: integer
+        format: int32
+      system_type:
+        type: integer
+        format: int32
+      event_type:
+        type: integer
+        format: int32
+      event_status:
+        type: integer
+        format: int32
+      value:
+        type: string
+      condition_save_alarm:
+        type: integer
+        format: int32
+      condition_save_log:
+        type: integer
+        format: int32
+      priority:
+        type: integer
+        format: int32
+      office_operation_range_id:
+        type: string
+      operation_condition:
+        type: string
+    required:
+    - system
+    - system_type
+    - event_type
+    - event_status
+    - value
+    - condition_save_alarm
+    - condition_save_log
+    - priority
+    - office_operation_range_id
+    - operation_condition
+  CriarstatusRequest:
+    title: CriarstatusRequest
+    example:
+      name: teste5
+      color_line: '#ff0000'
+      color_word: '#ffffff'
+    type: object
+    properties:
+      name:
+        type: string
+      color_line:
+        type: string
+      color_word:
+        type: string
+    required:
+    - name
+    - color_line
+    - color_word
+  DeletarstatusRequest:
+    title: DeletarstatusRequest
+    example:
+      name: teste5
+      color_line: '#ff0000'
+      color_word: '#ffffff'
+    type: object
+    properties:
+      name:
+        type: string
+      color_line:
+        type: string
+      color_word:
+        type: string
+    required:
+    - name
+    - color_line
+    - color_word
+  EditarstatusRequest:
+    title: EditarstatusRequest
+    example:
+      name: tessssste
+      color_line: '#ff0000'
+      color_word: '#ffffff'
+    type: object
+    properties:
+      name:
+        type: string
+      color_line:
+        type: string
+      color_word:
+        type: string
+    required:
+    - name
+    - color_line
+    - color_word
+  CriarcriticidadeRequest:
+    title: CriarcriticidadeRequest
+    example:
+      name: testando
+      color_line: '#ff0000'
+      color_word: '#753e3e'
+      sound: horn
+      sound_alert: 2
+    type: object
+    properties:
+      name:
+        type: string
+      color_line:
+        type: string
+      color_word:
+        type: string
+      sound:
+        type: string
+      sound_alert:
+        type: integer
+        format: int32
+    required:
+    - name
+    - color_line
+    - color_word
+    - sound
+    - sound_alert
+  EditarcriticidadeRequest:
+    title: EditarcriticidadeRequest
+    example:
+      name: tesst
+      color_line: '#ffffff'
+      color_word: '#753e3e'
+      sound: horn
+      sound_alert: 2
+    type: object
+    properties:
+      name:
+        type: string
+      color_line:
+        type: string
+      color_word:
+        type: string
+      sound:
+        type: string
+      sound_alert:
+        type: integer
+        format: int32
+    required:
+    - name
+    - color_line
+    - color_word
+    - sound
+    - sound_alert
+  CriarmensagemRequest:
+    title: CriarmensagemRequest
+    example:
+      name: new
+    type: object
+    properties:
+      name:
+        type: string
+    required:
+    - name
+  DeletarmensagemRequest:
+    title: DeletarmensagemRequest
+    example:
+      name: new
+    type: object
+    properties:
+      name:
+        type: string
+    required:
+    - name
+  EditarmensagemRequest:
+    title: EditarmensagemRequest
+    example:
+      name: test2
+    type: object
+    properties:
+      name:
+        type: string
+    required:
+    - name
+  CriarmanualalarmeRequest:
+    title: CriarmanualalarmeRequest
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      system:
+        type: integer
+        format: int32
+      system_type:
+        type: integer
+        format: int32
+      ambient:
+        type: integer
+        format: int32
+      event_type:
+        type: integer
+        format: int32
+      status:
+        type: integer
+        format: int32
+      priority:
+        type: integer
+        format: int32
+      poipriority:
+        type: integer
+        format: int32
+      point_id:
+        type: integer
+        format: int32
+      description_point:
+        type: string
+    required:
+    - office
+    - system
+    - system_type
+    - ambient
+    - event_type
+    - status
+    - priority
+    - poipriority
+    - point_id
+    - description_point
+  CriarworkflowRequest:
+    title: CriarworkflowRequest
+    example:
+      name: teste 4
+      active: false
+      timeout: 420
+      partition_armed: true
+      event_type: 91
+      is_test: false
+      system: 8
+      system_type: 1
+    type: object
+    properties:
+      name:
+        type: string
+      active:
+        type: boolean
+      timeout:
+        type: integer
+        format: int32
+      partition_armed:
+        type: boolean
+      event_type:
+        type: integer
+        format: int32
+      is_test:
+        type: boolean
+      system:
+        type: integer
+        format: int32
+      system_type:
+        type: integer
+        format: int32
+    required:
+    - name
+    - active
+    - timeout
+    - partition_armed
+    - event_type
+    - is_test
+    - system
+    - system_type
+  DeletarworkflowRequest:
+    title: DeletarworkflowRequest
+    example:
+      name: teste 4
+      active: false
+      timeout: 420
+      partition_armed: true
+      event_type: 91
+      is_test: false
+      system: 8
+      system_type: 1
+    type: object
+    properties:
+      name:
+        type: string
+      active:
+        type: boolean
+      timeout:
+        type: integer
+        format: int32
+      partition_armed:
+        type: boolean
+      event_type:
+        type: integer
+        format: int32
+      is_test:
+        type: boolean
+      system:
+        type: integer
+        format: int32
+      system_type:
+        type: integer
+        format: int32
+    required:
+    - name
+    - active
+    - timeout
+    - partition_armed
+    - event_type
+    - is_test
+    - system
+    - system_type
+  EditarworkflowRequest:
+    title: EditarworkflowRequest
+    example:
+      name: teste 4
+      active: false
+      timeout: 420
+      partition_armed: true
+      event_type: 91
+      is_test: false
+      system: 8
+      system_type: 1
+    type: object
+    properties:
+      name:
+        type: string
+      active:
+        type: boolean
+      timeout:
+        type: integer
+        format: int32
+      partition_armed:
+        type: boolean
+      event_type:
+        type: integer
+        format: int32
+      is_test:
+        type: boolean
+      system:
+        type: integer
+        format: int32
+      system_type:
+        type: integer
+        format: int32
+    required:
+    - name
+    - active
+    - timeout
+    - partition_armed
+    - event_type
+    - is_test
+    - system
+    - system_type
+  EditarpassosRequest:
+    title: EditarpassosRequest
+    type: object
+    properties:
+      workflow_id:
+        type: integer
+        format: int32
+      activity_id:
+        type: integer
+        format: int32
+      initial:
+        type: boolean
+      final:
+        type: boolean
+      step:
+        type: integer
+        format: int32
+      next_step_confirmation:
+        type: integer
+        format: int32
+      next_step_denial:
+        type: integer
+        format: int32
+      timeout:
+        type: integer
+        format: int32
+      activity:
+        $ref: '#/definitions/Activity'
+    required:
+    - workflow_id
+    - activity_id
+    - initial
+    - final
+    - step
+    - next_step_confirmation
+    - next_step_denial
+    - timeout
+    - activity
+  Activity:
+    title: Activity
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int32
+      selection_type_number:
+        type: string
+      list_values_string:
+        type: string
+      name:
+        type: string
+      confirmation_text:
+        type: string
+      denial_text:
+        type: string
+      confirmation_color:
+        type: string
+      confirmation_color_text:
+        type: string
+      selection_type:
+        type: string
+      denial_color:
+        type: string
+      denial_color_text:
+        type: string
+      list_values:
+        type: string
+    required:
+    - id
+    - selection_type_number
+    - list_values_string
+    - name
+    - confirmation_text
+    - denial_text
+    - confirmation_color
+    - confirmation_color_text
+    - selection_type
+    - denial_color
+    - denial_color_text
+    - list_values
+  CriaratividadeRequest:
+    title: CriaratividadeRequest
+    type: object
+    properties:
+      name:
+        type: string
+      confirmation_text:
+        type: string
+      denial_text:
+        type: string
+      confirmation_color:
+        type: string
+      confirmation_color_text:
+        type: string
+      denial_color:
+        type: string
+      denial_color_text:
+        type: string
+      list_values:
+        type: string
+      selection_type:
+        type: string
+    required:
+    - name
+    - confirmation_text
+    - denial_text
+    - confirmation_color
+    - confirmation_color_text
+    - denial_color
+    - denial_color_text
+    - list_values
+    - selection_type
+  DeletaratividadeRequest:
+    title: DeletaratividadeRequest
+    type: object
+    properties:
+      name:
+        type: string
+      confirmation_text:
+        type: string
+      denial_text:
+        type: string
+      confirmation_color:
+        type: string
+      confirmation_color_text:
+        type: string
+      denial_color:
+        type: string
+      denial_color_text:
+        type: string
+      list_values:
+        type: string
+      selection_type:
+        type: string
+    required:
+    - name
+    - confirmation_text
+    - denial_text
+    - confirmation_color
+    - confirmation_color_text
+    - denial_color
+    - denial_color_text
+    - list_values
+    - selection_type
+  EditaratividadeRequest:
+    title: EditaratividadeRequest
+    type: object
+    properties:
+      name:
+        type: string
+      confirmation_text:
+        type: string
+      denial_text:
+        type: string
+      confirmation_color:
+        type: string
+      confirmation_color_text:
+        type: string
+      denial_color:
+        type: string
+      denial_color_text:
+        type: string
+      list_values:
+        type: string
+      selection_type:
+        type: string
+    required:
+    - name
+    - confirmation_text
+    - denial_text
+    - confirmation_color
+    - confirmation_color_text
+    - denial_color
+    - denial_color_text
+    - list_values
+    - selection_type
+  EditarServiçosRequest:
+    title: EditarServiçosRequest
+    example:
+      name: PATH_HOLIDAY
+      value: /home/adb360/backend/holidays/
+      is_editable: false
+      is_passphrase: false
+    type: object
+    properties:
+      name:
+        type: string
+      value:
+        type: string
+      is_editable:
+        type: boolean
+      is_passphrase:
+        type: boolean
+    required:
+    - name
+    - value
+    - is_editable
+    - is_passphrase
+  CriarRotaRequest:
+    title: CriarRotaRequest
+    example:
+      name: ronda teste
+      start_time: 02:00
+      end_time: 03:00
+      start_date: 2023-08-30
+      repeat_type: 1
+      office: 1816
+      repeat_on_monday: false
+      repeat_on_tuesday: false
+      repeat_on_wednesday: false
+      repeat_on_thursday: false
+      repeat_on_friday: false
+      repeat_on_saturday: false
+      repeat_on_sunday: false
+    type: object
+    properties:
+      name:
+        type: string
+      start_time:
+        type: string
+      end_time:
+        type: string
+      start_date:
+        type: string
+      repeat_type:
+        type: integer
+        format: int32
+      office:
+        type: integer
+        format: int32
+      repeat_on_monday:
+        type: boolean
+      repeat_on_tuesday:
+        type: boolean
+      repeat_on_wednesday:
+        type: boolean
+      repeat_on_thursday:
+        type: boolean
+      repeat_on_friday:
+        type: boolean
+      repeat_on_saturday:
+        type: boolean
+      repeat_on_sunday:
+        type: boolean
+    required:
+    - name
+    - start_time
+    - end_time
+    - start_date
+    - repeat_type
+    - office
+    - repeat_on_monday
+    - repeat_on_tuesday
+    - repeat_on_wednesday
+    - repeat_on_thursday
+    - repeat_on_friday
+    - repeat_on_saturday
+    - repeat_on_sunday
+  CriarrotinaRequest:
+    title: CriarrotinaRequest
+    type: object
+    properties:
+      title:
+        type: string
+      patrol:
+        type: integer
+        format: int32
+      x_position:
+        type: integer
+        format: int32
+      y_position:
+        type: integer
+        format: int32
+      source:
+        type: string
+    required:
+    - title
+    - patrol
+    - x_position
+    - y_position
+    - source
+  EditarrotaRequest:
+    title: EditarrotaRequest
+    example:
+      name: ronda teste
+      start_time: 02:00
+      end_time: 03:00
+      start_date: 2023-08-30
+      repeat_type: 1
+      office: 1816
+      repeat_on_monday: false
+      repeat_on_tuesday: false
+      repeat_on_wednesday: false
+      repeat_on_thursday: false
+      repeat_on_friday: false
+      repeat_on_saturday: false
+      repeat_on_sunday: false
+    type: object
+    properties:
+      name:
+        type: string
+      start_time:
+        type: string
+      end_time:
+        type: string
+      start_date:
+        type: string
+      repeat_type:
+        type: integer
+        format: int32
+      office:
+        type: integer
+        format: int32
+      repeat_on_monday:
+        type: boolean
+      repeat_on_tuesday:
+        type: boolean
+      repeat_on_wednesday:
+        type: boolean
+      repeat_on_thursday:
+        type: boolean
+      repeat_on_friday:
+        type: boolean
+      repeat_on_saturday:
+        type: boolean
+      repeat_on_sunday:
+        type: boolean
+    required:
+    - name
+    - start_time
+    - end_time
+    - start_date
+    - repeat_type
+    - office
+    - repeat_on_monday
+    - repeat_on_tuesday
+    - repeat_on_wednesday
+    - repeat_on_thursday
+    - repeat_on_friday
+    - repeat_on_saturday
+    - repeat_on_sunday
+  DeletarquestionarioRequest:
+    title: DeletarquestionarioRequest
+    example:
+      text: deu certo?
+      type: 0
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: integer
+        format: int32
+    required:
+    - text
+    - type
+  CriarquestionarioRequest:
+    title: CriarquestionarioRequest
+    example:
+      text: deu certo?
+      type: 0
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: integer
+        format: int32
+    required:
+    - text
+    - type
+  EditarquestionarioRequest:
+    title: EditarquestionarioRequest
+    example:
+      text: teste
+      type: 0
+    type: object
+    properties:
+      text:
+        type: string
+      type:
+        type: integer
+        format: int32
+    required:
+    - text
+    - type
+  CriarjustificativasRequest:
+    title: CriarjustificativasRequest
+    example:
+      text: agora deu certo
+    type: object
+    properties:
+      text:
+        type: string
+    required:
+    - text
+  DeletarjustificativasRequest:
+    title: DeletarjustificativasRequest
+    example:
+      text: agora deu certo
+    type: object
+    properties:
+      text:
+        type: string
+    required:
+    - text
+  EditarjustificativaRequest:
+    title: EditarjustificativaRequest
+    example:
+      text: test updating
+    type: object
+    properties:
+      text:
+        type: string
+    required:
+    - text
+  AtualizarusuárioRequest:
+    title: AtualizarusuárioRequest
+    example:
+      full_name: Mateus
+    type: object
+    properties:
+      full_name:
+        type: string
+    required:
+    - full_name
+  CriarusuárioRequest:
+    title: CriarusuárioRequest
+    type: object
+    properties:
+      full_name:
+        type: string
+      username:
+        type: string
+      password:
+        type: string
+      profile:
+        type: integer
+        format: int32
+      is_active:
+        type: boolean
+      photo:
+        type: string
+      force_password_change:
+        type: boolean
+    required:
+    - full_name
+    - username
+    - password
+    - profile
+    - is_active
+    - photo
+    - force_password_change
+  EditarcadastramentodeusuárioRequest:
+    title: EditarcadastramentodeusuárioRequest
+    type: object
+    properties:
+      full_name:
+        type: string
+      username:
+        type: string
+      password:
+        type: string
+      profile:
+        type: integer
+        format: int32
+      is_active:
+        type: boolean
+      photo:
+        type: string
+      force_password_change:
+        type: boolean
+    required:
+    - full_name
+    - username
+    - password
+    - profile
+    - is_active
+    - photo
+    - force_password_change
+  DeletarcadastramentodeusuárioRequest:
+    title: DeletarcadastramentodeusuárioRequest
+    type: object
+    properties:
+      full_name:
+        type: string
+      username:
+        type: string
+      password:
+        type: string
+      profile:
+        type: integer
+        format: int32
+      is_active:
+        type: boolean
+      photo:
+        type: string
+      force_password_change:
+        type: boolean
+    required:
+    - full_name
+    - username
+    - password
+    - profile
+    - is_active
+    - photo
+    - force_password_change
+  CriaragenciaRequest:
+    title: CriaragenciaRequest
+    type: object
+    properties:
+      gmttimezone:
+        type: integer
+        format: int32
+      segment:
+        type: integer
+        format: int32
+      country:
+        type: integer
+        format: int32
+      state:
+        type: integer
+        format: int32
+      city:
+        type: integer
+        format: int32
+      environment:
+        type: integer
+        format: int32
+      uniorg:
+        type: string
+      regional:
+        type: string
+      name:
+        type: string
+      bank:
+        type: string
+      parent:
+        type: string
+      gg:
+        type: string
+      phone_gg:
+        type: string
+      ga:
+        type: string
+      phone_ga:
+        type: string
+      sa:
+        type: string
+      phone_sa:
+        type: string
+      sra:
+        type: string
+      phone_sra:
+        type: string
+      employee_one:
+        type: string
+      phone_employee_one:
+        type: string
+      employee_two:
+        type: string
+      phone_employee_two:
+        type: string
+      address:
+        type: string
+      district:
+        type: string
+      phone:
+        type: string
+      phone_police:
+        type: string
+      zip_code:
+        type: string
+      portage:
+        type: string
+      patrol:
+        type: string
+      opening_hours:
+        type: string
+      duress_password:
+        type: string
+      duress_password_check:
+        type: string
+      is_active:
+        type: boolean
+      latitude:
+        type: string
+      longitude:
+        type: string
+      notes:
+        type: string
+    required:
+    - gmttimezone
+    - segment
+    - country
+    - state
+    - city
+    - environment
+    - uniorg
+    - regional
+    - name
+    - bank
+    - parent
+    - gg
+    - phone_gg
+    - ga
+    - phone_ga
+    - sa
+    - phone_sa
+    - sra
+    - phone_sra
+    - employee_one
+    - phone_employee_one
+    - employee_two
+    - phone_employee_two
+    - address
+    - district
+    - phone
+    - phone_police
+    - zip_code
+    - portage
+    - patrol
+    - opening_hours
+    - duress_password
+    - duress_password_check
+    - is_active
+    - latitude
+    - longitude
+    - notes
+  DeletarpontodevendaRequest:
+    title: DeletarpontodevendaRequest
+    type: object
+    properties:
+      gmttimezone:
+        type: integer
+        format: int32
+      segment:
+        type: integer
+        format: int32
+      country:
+        type: integer
+        format: int32
+      state:
+        type: integer
+        format: int32
+      city:
+        type: integer
+        format: int32
+      environment:
+        type: integer
+        format: int32
+      uniorg:
+        type: string
+      regional:
+        type: string
+      name:
+        type: string
+      bank:
+        type: string
+      parent:
+        type: string
+      gg:
+        type: string
+      phone_gg:
+        type: string
+      ga:
+        type: string
+      phone_ga:
+        type: string
+      sa:
+        type: string
+      phone_sa:
+        type: string
+      sra:
+        type: string
+      phone_sra:
+        type: string
+      employee_one:
+        type: string
+      phone_employee_one:
+        type: string
+      employee_two:
+        type: string
+      phone_employee_two:
+        type: string
+      address:
+        type: string
+      district:
+        type: string
+      phone:
+        type: string
+      phone_police:
+        type: string
+      zip_code:
+        type: string
+      portage:
+        type: string
+      patrol:
+        type: string
+      opening_hours:
+        type: string
+      duress_password:
+        type: string
+      duress_password_check:
+        type: string
+      is_active:
+        type: boolean
+      latitude:
+        type: string
+      longitude:
+        type: string
+      notes:
+        type: string
+    required:
+    - gmttimezone
+    - segment
+    - country
+    - state
+    - city
+    - environment
+    - uniorg
+    - regional
+    - name
+    - bank
+    - parent
+    - gg
+    - phone_gg
+    - ga
+    - phone_ga
+    - sa
+    - phone_sa
+    - sra
+    - phone_sra
+    - employee_one
+    - phone_employee_one
+    - employee_two
+    - phone_employee_two
+    - address
+    - district
+    - phone
+    - phone_police
+    - zip_code
+    - portage
+    - patrol
+    - opening_hours
+    - duress_password
+    - duress_password_check
+    - is_active
+    - latitude
+    - longitude
+    - notes
+  EditarpontodevendaRequest:
+    title: EditarpontodevendaRequest
+    type: object
+    properties:
+      gmttimezone:
+        type: integer
+        format: int32
+      segment:
+        type: integer
+        format: int32
+      country:
+        type: integer
+        format: int32
+      state:
+        type: integer
+        format: int32
+      city:
+        type: integer
+        format: int32
+      environment:
+        type: integer
+        format: int32
+      uniorg:
+        type: string
+      regional:
+        type: string
+      name:
+        type: string
+      bank:
+        type: string
+      parent:
+        type: string
+      gg:
+        type: string
+      phone_gg:
+        type: string
+      ga:
+        type: string
+      phone_ga:
+        type: string
+      sa:
+        type: string
+      phone_sa:
+        type: string
+      sra:
+        type: string
+      phone_sra:
+        type: string
+      employee_one:
+        type: string
+      phone_employee_one:
+        type: string
+      employee_two:
+        type: string
+      phone_employee_two:
+        type: string
+      address:
+        type: string
+      district:
+        type: string
+      phone:
+        type: string
+      phone_police:
+        type: string
+      zip_code:
+        type: string
+      portage:
+        type: string
+      patrol:
+        type: string
+      opening_hours:
+        type: string
+      duress_password:
+        type: string
+      duress_password_check:
+        type: string
+      is_active:
+        type: boolean
+      latitude:
+        type: string
+      longitude:
+        type: string
+      notes:
+        type: string
+    required:
+    - gmttimezone
+    - segment
+    - country
+    - state
+    - city
+    - environment
+    - uniorg
+    - regional
+    - name
+    - bank
+    - parent
+    - gg
+    - phone_gg
+    - ga
+    - phone_ga
+    - sa
+    - phone_sa
+    - sra
+    - phone_sra
+    - employee_one
+    - phone_employee_one
+    - employee_two
+    - phone_employee_two
+    - address
+    - district
+    - phone
+    - phone_police
+    - zip_code
+    - portage
+    - patrol
+    - opening_hours
+    - duress_password
+    - duress_password_check
+    - is_active
+    - latitude
+    - longitude
+    - notes
+  criarcadastrodeusuariorequest:
+    title: criarcadastrodeusuariorequest
+    type: object
+    properties:
+      name:
+        type: string
+      matricula:
+        type: string
+      address:
+        type: string
+      person_type:
+        type: integer
+        format: int32
+      photo:
+        type: string
+      note:
+        type: string
+    required:
+    - name
+    - matricula
+    - address
+    - person_type
+    - photo
+    - note
+  DeletarcadastrodeusuarioRequest:
+    title: DeletarcadastrodeusuarioRequest
+    type: object
+    properties:
+      name:
+        type: string
+      matricula:
+        type: string
+      address:
+        type: string
+      person_type:
+        type: integer
+        format: int32
+      photo:
+        type: string
+      note:
+        type: string
+    required:
+    - name
+    - matricula
+    - address
+    - person_type
+    - photo
+    - note
+  EditarcadastrodeusuarioRequest:
+    title: EditarcadastrodeusuarioRequest
+    type: object
+    properties:
+      name:
+        type: string
+      matricula:
+        type: string
+      address:
+        type: string
+      person_type:
+        type: integer
+        format: int32
+      photo:
+        type: string
+      note:
+        type: string
+    required:
+    - name
+    - matricula
+    - address
+    - person_type
+    - photo
+    - note
+  CadastraroperaçãoRequest:
+    title: CadastraroperaçãoRequest
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      operation:
+        type: integer
+        format: int32
+      date_start:
+        type: string
+      date_finish:
+        type: string
+      notes:
+        type: string
+      panels_ambients:
+        type: array
+        items:
+          $ref: '#/definitions/PanelsAmbient'
+      ambients:
+        type: string
+    required:
+    - office
+    - operation
+    - date_start
+    - date_finish
+    - notes
+    - panels_ambients
+    - ambients
+  PanelsAmbient:
+    title: PanelsAmbient
+    type: object
+    properties:
+      ambient:
+        type: string
+      ambient_id:
+        type: integer
+        format: int32
+      operation:
+        type: string
+      actived:
+        type: boolean
+    required:
+    - ambient
+    - ambient_id
+    - operation
+    - actived
+  CadastraroperaçãoCopyRequest:
+    title: CadastraroperaçãoCopyRequest
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      operation:
+        type: integer
+        format: int32
+      date_start:
+        type: string
+      date_finish:
+        type: string
+      notes:
+        type: string
+      panels_ambients:
+        type: array
+        items:
+          $ref: '#/definitions/PanelsAmbient'
+      ambients:
+        type: string
+    required:
+    - office
+    - operation
+    - date_start
+    - date_finish
+    - notes
+    - panels_ambients
+    - ambients
+  EditarautodefesaRequest:
+    title: EditarautodefesaRequest
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int32
+      uniorg:
+        type: string
+      office_type:
+        type: string
+      name_office:
+        type: string
+      ambient:
+        type: string
+      ambient_id:
+        type: string
+      midweek_s1:
+        type: string
+      midweek_e1:
+        type: string
+      midweek_s2:
+        type: string
+      midweek_e2:
+        type: string
+      midweek_s3:
+        type: string
+      midweek_e3:
+        type: string
+      weekend_s1:
+        type: string
+      weekend_e1:
+        type: string
+      weekend_s2:
+        type: string
+      weekend_e2:
+        type: string
+      weekend_s3:
+        type: string
+      weekend_e3:
+        type: string
+      active:
+        type: boolean
+      type_shoot_m1:
+        type: integer
+        format: int32
+      delay_shoot_m1:
+        type: integer
+        format: int32
+      type_shoot_m2:
+        type: integer
+        format: int32
+      delay_shoot_m2:
+        type: integer
+        format: int32
+      type_shoot_m3:
+        type: integer
+        format: int32
+      delay_shoot_m3:
+        type: integer
+        format: int32
+      type_shoot_w1:
+        type: integer
+        format: int32
+      delay_shoot_w1:
+        type: integer
+        format: int32
+      type_shoot_w2:
+        type: integer
+        format: int32
+      delay_shoot_w2:
+        type: integer
+        format: int32
+      type_shoot_w3:
+        type: integer
+        format: int32
+      delay_shoot_w3:
+        type: integer
+        format: int32
+      panel:
+        type: integer
+        format: int32
+    required:
+    - id
+    - uniorg
+    - office_type
+    - name_office
+    - ambient
+    - ambient_id
+    - midweek_s1
+    - midweek_e1
+    - midweek_s2
+    - midweek_e2
+    - midweek_s3
+    - midweek_e3
+    - weekend_s1
+    - weekend_e1
+    - weekend_s2
+    - weekend_e2
+    - weekend_s3
+    - weekend_e3
+    - active
+    - type_shoot_m1
+    - delay_shoot_m1
+    - type_shoot_m2
+    - delay_shoot_m2
+    - type_shoot_m3
+    - delay_shoot_m3
+    - type_shoot_w1
+    - delay_shoot_w1
+    - type_shoot_w2
+    - delay_shoot_w2
+    - type_shoot_w3
+    - delay_shoot_w3
+    - panel
+  criarequipamentosrequest:
+    title: criarequipamentosrequest
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      ambient:
+        type: string
+      address:
+        type: string
+      port:
+        type: integer
+        format: int32
+      gateway:
+        type: string
+      netmask:
+        type: string
+      switch_number:
+        type: string
+      switch_port:
+        type: string
+      has_audio:
+        type: boolean
+      has_camera:
+        type: boolean
+      installer:
+        type: string
+      has_automatic_door:
+        type: boolean
+      has_controlid:
+        type: boolean
+      has_doorlock:
+        type: boolean
+      has_sliding_gate:
+        type: boolean
+      has_people_count:
+        type: boolean
+      dvr_people_count:
+        type: string
+      cam_people_count:
+        type: string
+      is_rtsp_people_count:
+        type: boolean
+      similarity_people_count:
+        type: string
+      has_dual_custody:
+        type: boolean
+      has_fogcannon:
+        type: boolean
+      has_sdai:
+        type: boolean
+      protocol_fog:
+        type: string
+      has_sirene_rontan:
+        type: boolean
+      has_neutralizer:
+        type: boolean
+      neutralizer_serial_number:
+        type: string
+      has_lighting_automation:
+        type: boolean
+      time_shoots_neutralizer:
+        type: string
+      has_densityfog_drycontact:
+        type: boolean
+      has_aliara:
+        type: boolean
+      has_force_shoot:
+        type: boolean
+      has_three_door_sluice:
+        type: boolean
+      active:
+        type: boolean
+      cam_amount:
+        type: integer
+        format: int32
+      board:
+        type: integer
+        format: int32
+      installed_date:
+        type: string
+    required:
+    - office
+    - ambient
+    - address
+    - port
+    - gateway
+    - netmask
+    - switch_number
+    - switch_port
+    - has_audio
+    - has_camera
+    - installer
+    - has_automatic_door
+    - has_controlid
+    - has_doorlock
+    - has_sliding_gate
+    - has_people_count
+    - dvr_people_count
+    - cam_people_count
+    - is_rtsp_people_count
+    - similarity_people_count
+    - has_dual_custody
+    - has_fogcannon
+    - has_sdai
+    - protocol_fog
+    - has_sirene_rontan
+    - has_neutralizer
+    - neutralizer_serial_number
+    - has_lighting_automation
+    - time_shoots_neutralizer
+    - has_densityfog_drycontact
+    - has_aliara
+    - has_force_shoot
+    - has_three_door_sluice
+    - active
+    - cam_amount
+    - board
+    - installed_date
+  editarequipamentosrequest:
+    title: editarequipamentosrequest
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      ambient:
+        type: string
+      address:
+        type: string
+      port:
+        type: integer
+        format: int32
+      gateway:
+        type: string
+      netmask:
+        type: string
+      switch_number:
+        type: string
+      switch_port:
+        type: string
+      has_audio:
+        type: boolean
+      has_camera:
+        type: boolean
+      installer:
+        type: string
+      has_automatic_door:
+        type: boolean
+      has_controlid:
+        type: boolean
+      has_doorlock:
+        type: boolean
+      has_sliding_gate:
+        type: boolean
+      has_people_count:
+        type: boolean
+      dvr_people_count:
+        type: string
+      cam_people_count:
+        type: string
+      is_rtsp_people_count:
+        type: boolean
+      similarity_people_count:
+        type: string
+      has_dual_custody:
+        type: boolean
+      has_fogcannon:
+        type: boolean
+      has_sdai:
+        type: boolean
+      protocol_fog:
+        type: string
+      has_sirene_rontan:
+        type: boolean
+      has_neutralizer:
+        type: boolean
+      neutralizer_serial_number:
+        type: string
+      has_lighting_automation:
+        type: boolean
+      time_shoots_neutralizer:
+        type: string
+      has_densityfog_drycontact:
+        type: boolean
+      has_aliara:
+        type: boolean
+      has_force_shoot:
+        type: boolean
+      has_three_door_sluice:
+        type: boolean
+      active:
+        type: boolean
+      cam_amount:
+        type: integer
+        format: int32
+      board:
+        type: integer
+        format: int32
+      installed_date:
+        type: string
+    required:
+    - office
+    - ambient
+    - address
+    - port
+    - gateway
+    - netmask
+    - switch_number
+    - switch_port
+    - has_audio
+    - has_camera
+    - installer
+    - has_automatic_door
+    - has_controlid
+    - has_doorlock
+    - has_sliding_gate
+    - has_people_count
+    - dvr_people_count
+    - cam_people_count
+    - is_rtsp_people_count
+    - similarity_people_count
+    - has_dual_custody
+    - has_fogcannon
+    - has_sdai
+    - protocol_fog
+    - has_sirene_rontan
+    - has_neutralizer
+    - neutralizer_serial_number
+    - has_lighting_automation
+    - time_shoots_neutralizer
+    - has_densityfog_drycontact
+    - has_aliara
+    - has_force_shoot
+    - has_three_door_sluice
+    - active
+    - cam_amount
+    - board
+    - installed_date
+  CriarservidorRequest:
+    title: CriarservidorRequest
+    example:
+      host_name: teste
+      port: '3'
+    type: object
+    properties:
+      host_name:
+        type: string
+      port:
+        type: string
+    required:
+    - host_name
+    - port
+  DeletarservidorRequest:
+    title: DeletarservidorRequest
+    example:
+      host_name: teste
+      port: '3'
+    type: object
+    properties:
+      host_name:
+        type: string
+      port:
+        type: string
+    required:
+    - host_name
+    - port
+  EditarservidorRequest:
+    title: EditarservidorRequest
+    example:
+      host_name: test
+      port: '3'
+    type: object
+    properties:
+      host_name:
+        type: string
+      port:
+        type: string
+    required:
+    - host_name
+    - port
+  CriarequipamentoRequest:
+    title: CriarequipamentoRequest
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      host:
+        type: string
+      address:
+        type: string
+      port:
+        type: integer
+        format: int32
+      type:
+        type: integer
+        format: int32
+      account:
+        type: string
+      monitor:
+        type: boolean
+      date_create:
+        type: string
+    required:
+    - office
+    - host
+    - address
+    - port
+    - type
+    - account
+    - monitor
+    - date_create
+  DeletarequipamentoRequest:
+    title: DeletarequipamentoRequest
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      host:
+        type: string
+      address:
+        type: string
+      port:
+        type: integer
+        format: int32
+      type:
+        type: integer
+        format: int32
+      account:
+        type: string
+      monitor:
+        type: boolean
+      date_create:
+        type: string
+    required:
+    - office
+    - host
+    - address
+    - port
+    - type
+    - account
+    - monitor
+    - date_create
+  EditarequipamentoRequest:
+    title: EditarequipamentoRequest
+    example:
+      office: 1816
+      address: test1.stn.com
+      port: 7071
+      host: localhost.localdomain:12002
+      date_create: 20/06/2023
+      monitor: true
+      account: C001
+      type: 2
+      system: 8
+      system_type: 7
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      address:
+        type: string
+      port:
+        type: integer
+        format: int32
+      host:
+        type: string
+      date_create:
+        type: string
+      monitor:
+        type: boolean
+      account:
+        type: string
+      type:
+        type: integer
+        format: int32
+      system:
+        type: integer
+        format: int32
+      system_type:
+        type: integer
+        format: int32
+    required:
+    - office
+    - address
+    - port
+    - host
+    - date_create
+    - monitor
+    - account
+    - type
+    - system
+    - system_type
+  CriarboschreceptoraRequest:
+    title: CriarboschreceptoraRequest
+    example:
+      description: testando
+      ip_receiver: 189.20.60.202
+      ip_server: 187.45.24.50
+      port: '2'
+      typeconnection: 2
+      date_create: 16/08/2023
+    type: object
+    properties:
+      description:
+        type: string
+      ip_receiver:
+        type: string
+      ip_server:
+        type: string
+      port:
+        type: string
+      typeconnection:
+        type: integer
+        format: int32
+      date_create:
+        type: string
+    required:
+    - description
+    - ip_receiver
+    - ip_server
+    - port
+    - typeconnection
+    - date_create
+  DeletarboschreceptoraRequest:
+    title: DeletarboschreceptoraRequest
+    example:
+      description: testando
+      ip_receiver: 189.20.60.202
+      ip_server: 187.45.24.50
+      port: '2'
+      typeconnection: 2
+      date_create: 16/08/2023
+    type: object
+    properties:
+      description:
+        type: string
+      ip_receiver:
+        type: string
+      ip_server:
+        type: string
+      port:
+        type: string
+      typeconnection:
+        type: integer
+        format: int32
+      date_create:
+        type: string
+    required:
+    - description
+    - ip_receiver
+    - ip_server
+    - port
+    - typeconnection
+    - date_create
+  EditarboschreceptoraRequest:
+    title: EditarboschreceptoraRequest
+    example:
+      typeconnection: 2
+      typeconnection_id: 2
+      description: testing
+      ip_receiver: 187.45.24.50
+      ip_server: 187.45.24.50
+      port: 2
+      date_create: 16/08/2023
+      reset_service: false
+      online: false
+    type: object
+    properties:
+      typeconnection:
+        type: integer
+        format: int32
+      typeconnection_id:
+        type: integer
+        format: int32
+      description:
+        type: string
+      ip_receiver:
+        type: string
+      ip_server:
+        type: string
+      port:
+        type: integer
+        format: int32
+      date_create:
+        type: string
+      reset_service:
+        type: boolean
+      online:
+        type: boolean
+    required:
+    - typeconnection
+    - typeconnection_id
+    - description
+    - ip_receiver
+    - ip_server
+    - port
+    - date_create
+    - reset_service
+    - online
+  CadastrarequipamentoRequest:
+    title: CadastrarequipamentoRequest
+    example:
+      office: 1817
+      receiver: 9
+      type: 1
+      account: C017
+      name: just a test
+      date_create: 16/08/2023
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      receiver:
+        type: integer
+        format: int32
+      type:
+        type: integer
+        format: int32
+      account:
+        type: string
+      name:
+        type: string
+      date_create:
+        type: string
+    required:
+    - office
+    - receiver
+    - type
+    - account
+    - name
+    - date_create
+  DeletarequipamentoRequest1:
+    title: DeletarequipamentoRequest1
+    example:
+      office: 1817
+      receiver: 9
+      type: 1
+      account: C017
+      name: just a test
+      date_create: 16/08/2023
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      receiver:
+        type: integer
+        format: int32
+      type:
+        type: integer
+        format: int32
+      account:
+        type: string
+      name:
+        type: string
+      date_create:
+        type: string
+    required:
+    - office
+    - receiver
+    - type
+    - account
+    - name
+    - date_create
+  EditarequipamentoRequest1:
+    title: EditarequipamentoRequest1
+    example:
+      office: 1817
+      type: 2
+      receiver: 9
+      name: Painel Bosch 4512
+      date_create: 16/11/2021
+      online: false
+      account: C002
+      system: 14
+      system_type: 7
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      type:
+        type: integer
+        format: int32
+      receiver:
+        type: integer
+        format: int32
+      name:
+        type: string
+      date_create:
+        type: string
+      online:
+        type: boolean
+      account:
+        type: string
+      system:
+        type: integer
+        format: int32
+      system_type:
+        type: integer
+        format: int32
+    required:
+    - office
+    - type
+    - receiver
+    - name
+    - date_create
+    - online
+    - account
+    - system
+    - system_type
+  CadastrarequipamentoRequest1:
+    title: CadastrarequipamentoRequest1
+    example:
+      office: 1816
+      address: 187.32.248.185
+      port: 8080
+      date_create: 16/08/2023
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      address:
+        type: string
+      port:
+        type: integer
+        format: int32
+      date_create:
+        type: string
+    required:
+    - office
+    - address
+    - port
+    - date_create
+  EditarequipamentoRequest2:
+    title: EditarequipamentoRequest2
+    example:
+      office: 1816
+      address: 187.32.248.185
+      port: 8080
+      date_create: 16/08/2023
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      address:
+        type: string
+      port:
+        type: integer
+        format: int32
+      date_create:
+        type: string
+    required:
+    - office
+    - address
+    - port
+    - date_create
+  CadastrarequipamentoRequest2:
+    title: CadastrarequipamentoRequest2
+    example:
+      office: 1816
+      address: 0.0.0.0
+      local_address: 250.0.0.0
+      port: 8080
+      username: '202020'
+      password: '#3598candY'
+      connection_type: 0
+      date_create: 23/08/2023
+      enable_ssl: false
+      is_digest: true
+      real_time: false
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      address:
+        type: string
+      local_address:
+        type: string
+      port:
+        type: integer
+        format: int32
+      username:
+        type: string
+      password:
+        type: string
+      connection_type:
+        type: integer
+        format: int32
+      date_create:
+        type: string
+      enable_ssl:
+        type: boolean
+      is_digest:
+        type: boolean
+      real_time:
+        type: boolean
+    required:
+    - office
+    - address
+    - local_address
+    - port
+    - username
+    - password
+    - connection_type
+    - date_create
+    - enable_ssl
+    - is_digest
+    - real_time
+  CadastrartipoRequest:
+    title: CadastrartipoRequest
+    example:
+      name: typ
+    type: object
+    properties:
+      name:
+        type: string
+    required:
+    - name
+  EditartipoRequest:
+    title: EditartipoRequest
+    example:
+      name: test
+    type: object
+    properties:
+      name:
+        type: string
+    required:
+    - name
+  CadastrarregrafacialRequest:
+    title: CadastrarregrafacialRequest
+    example:
+      repository_name: test
+      repository_type: 1
+      run_rule_alarm: false
+      run_popup_manager: false
+      run_check_point: false
+      event_type: 91
+    type: object
+    properties:
+      repository_name:
+        type: string
+      repository_type:
+        type: integer
+        format: int32
+      run_rule_alarm:
+        type: boolean
+      run_popup_manager:
+        type: boolean
+      run_check_point:
+        type: boolean
+      event_type:
+        type: integer
+        format: int32
+    required:
+    - repository_name
+    - repository_type
+    - run_rule_alarm
+    - run_popup_manager
+    - run_check_point
+    - event_type
+  EditarregrafacialRequest:
+    title: EditarregrafacialRequest
+    example:
+      repository_name: test update
+      repository_type: 1
+      run_rule_alarm: false
+      run_popup_manager: false
+      run_check_point: false
+      event_type: 91
+    type: object
+    properties:
+      repository_name:
+        type: string
+      repository_type:
+        type: integer
+        format: int32
+      run_rule_alarm:
+        type: boolean
+      run_popup_manager:
+        type: boolean
+      run_check_point:
+        type: boolean
+      event_type:
+        type: integer
+        format: int32
+    required:
+    - repository_name
+    - repository_type
+    - run_rule_alarm
+    - run_popup_manager
+    - run_check_point
+    - event_type
+  EditarconfiguraçõesRequest:
+    title: EditarconfiguraçõesRequest
+    example:
+      username: system2
+      password: admin123
+      password_mmq: FfGDbXQ7gtNqnmOE
+      ip: 192.168.0.169
+      port: 9191
+      enable: true
+    type: object
+    properties:
+      username:
+        type: string
+      password:
+        type: string
+      password_mmq:
+        type: string
+      ip:
+        type: string
+      port:
+        type: integer
+        format: int32
+      enable:
+        type: boolean
+    required:
+    - username
+    - password
+    - password_mmq
+    - ip
+    - port
+    - enable
+  EditarhoradopontoRequest:
+    title: EditarhoradopontoRequest
+    example:
+      id: 1
+      interval_min: 30
+      interval_max: 120
+      range_in_start: 08:00
+      range_in_end: 10:30
+      range_interval_start: 12:00
+      range_interval_end: 15:59
+      range_out_start: 16:00
+      range_out_end: 19:30
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int32
+      interval_min:
+        type: integer
+        format: int32
+      interval_max:
+        type: integer
+        format: int32
+      range_in_start:
+        type: string
+      range_in_end:
+        type: string
+      range_interval_start:
+        type: string
+      range_interval_end:
+        type: string
+      range_out_start:
+        type: string
+      range_out_end:
+        type: string
+    required:
+    - id
+    - interval_min
+    - interval_max
+    - range_in_start
+    - range_in_end
+    - range_interval_start
+    - range_interval_end
+    - range_out_start
+    - range_out_end
+  CriaranfitriãoservidorRequest:
+    title: CriaranfitriãoservidorRequest
+    example:
+      host: user teste3
+    type: object
+    properties:
+      host:
+        type: string
+    required:
+    - host
+  EditaranfitriãoservidorRequest:
+    title: EditaranfitriãoservidorRequest
+    example:
+      host: test
+    type: object
+    properties:
+      host:
+        type: string
+    required:
+    - host
+  CadastrarbiometriaRequest:
+    title: CadastrarbiometriaRequest
+    example:
+      office: 1818
+      name: dispositivo teste2
+      username: user teste2
+      password: '#3598candY'
+      address: 187.45.24.50	
+      port: '3'
+      server: 1
+      ambient: 1
+      type: 1
+      is_digest: true
+      unlock_hold_interval: 5
+      date_create: 17/08/2023
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      name:
+        type: string
+      username:
+        type: string
+      password:
+        type: string
+      address:
+        type: string
+      port:
+        type: string
+      server:
+        type: integer
+        format: int32
+      ambient:
+        type: integer
+        format: int32
+      type:
+        type: integer
+        format: int32
+      is_digest:
+        type: boolean
+      unlock_hold_interval:
+        type: integer
+        format: int32
+      date_create:
+        type: string
+    required:
+    - office
+    - name
+    - username
+    - password
+    - address
+    - port
+    - server
+    - ambient
+    - type
+    - is_digest
+    - unlock_hold_interval
+    - date_create
+  EditarbiometriaRequest:
+    title: EditarbiometriaRequest
+    example:
+      office: 1818
+      name: dispositivo teste2
+      username: user teste
+      password: '#3598candY'
+      address: 187.45.24.50	
+      port: '3'
+      server: 1
+      ambient: 1
+      type: 1
+      is_digest: true
+      unlock_hold_interval: 5
+      date_create: 17/08/2023
+    type: object
+    properties:
+      office:
+        type: integer
+        format: int32
+      name:
+        type: string
+      username:
+        type: string
+      password:
+        type: string
+      address:
+        type: string
+      port:
+        type: string
+      server:
+        type: integer
+        format: int32
+      ambient:
+        type: integer
+        format: int32
+      type:
+        type: integer
+        format: int32
+      is_digest:
+        type: boolean
+      unlock_hold_interval:
+        type: integer
+        format: int32
+      date_create:
+        type: string
+    required:
+    - office
+    - name
+    - username
+    - password
+    - address
+    - port
+    - server
+    - ambient
+    - type
+    - is_digest
+    - unlock_hold_interval
+    - date_create
+  CadastrarusuárioRequest:
+    title: CadastrarusuárioRequest
+    type: object
+    properties:
+      photo:
+        type: string
+      name:
+        type: string
+      birth_date:
+        type: string
+      cpf:
+        type: string
+      type:
+        type: integer
+        format: int32
+      user_id:
+        type: string
+      card_number:
+        type: string
+      password:
+        type: string
+      is_master:
+        type: boolean
+      datetime_start:
+        type: string
+      datetime_end:
+        type: string
+      device_access:
+        type: array
+        items:
+          type: string
+      schedulecontroldevice:
+        type: array
+        items:
+          type: string
+    required:
+    - photo
+    - name
+    - birth_date
+    - cpf
+    - type
+    - user_id
+    - card_number
+    - password
+    - is_master
+    - datetime_start
+    - datetime_end
+    - device_access
+    - schedulecontroldevice
+  EditarusuárioRequest:
+    title: EditarusuárioRequest
+    type: object
+    properties:
+      photo:
+        type: string
+      name:
+        type: string
+      birth_date:
+        type: string
+      cpf:
+        type: string
+      type:
+        type: integer
+        format: int32
+      user_id:
+        type: string
+      card_number:
+        type: string
+      password:
+        type: string
+      is_master:
+        type: boolean
+      datetime_start:
+        type: string
+      datetime_end:
+        type: string
+      device_access:
+        type: array
+        items:
+          type: string
+      schedulecontroldevice:
+        type: array
+        items:
+          type: string
+    required:
+    - photo
+    - name
+    - birth_date
+    - cpf
+    - type
+    - user_id
+    - card_number
+    - password
+    - is_master
+    - datetime_start
+    - datetime_end
+    - device_access
+    - schedulecontroldevice
+  CriarbiometriaRequest:
+    title: CriarbiometriaRequest
+    example:
+      name: test
+      address: 255.0.0.0
+      office: 1820
+      panel: 817
+      ambient: 6
+      port: '80'
+      device_username: '202020'
+      device_password: '#3598candY'
+      block_interval: '5'
+      door_type: 5
+      date_create: 2023-08-23T00:59:57.950Z
+      device_type: 0
+    type: object
+    properties:
+      name:
+        type: string
+      address:
+        type: string
+      office:
+        type: integer
+        format: int32
+      panel:
+        type: integer
+        format: int32
+      ambient:
+        type: integer
+        format: int32
+      port:
+        type: string
+      device_username:
+        type: string
+      device_password:
+        type: string
+      block_interval:
+        type: string
+      door_type:
+        type: integer
+        format: int32
+      date_create:
+        type: string
+      device_type:
+        type: integer
+        format: int32
+    required:
+    - name
+    - address
+    - office
+    - panel
+    - ambient
+    - port
+    - device_username
+    - device_password
+    - block_interval
+    - door_type
+    - date_create
+    - device_type
+  CriarativoRequest:
+    title: CriarativoRequest
+    example:
+      name: ativo teste
+      icon: iconsmind-Add-Bag
+    type: object
+    properties:
+      name:
+        type: string
+      icon:
+        type: string
+    required:
+    - name
+    - icon
+  EditarativoRequest:
+    title: EditarativoRequest
+    example:
+      name: test update
+      icon: iconsmind-Add-Bag
+    type: object
+    properties:
+      name:
+        type: string
+      icon:
+        type: string
+    required:
+    - name
+    - icon
+  CriarpontodevendaRequest:
+    title: CriarpontodevendaRequest
+    type: object
+    properties:
+      gmttimezone:
+        type: integer
+        format: int32
+      segment:
+        type: integer
+        format: int32
+      country:
+        type: integer
+        format: int32
+      state:
+        type: integer
+        format: int32
+      city:
+        type: integer
+        format: int32
+      environment:
+        type: integer
+        format: int32
+      uniorg:
+        type: string
+      regional:
+        type: string
+      name:
+        type: string
+      bank:
+        type: string
+      parent:
+        type: string
+      gg:
+        type: string
+      phone_gg:
+        type: string
+      ga:
+        type: string
+      phone_ga:
+        type: string
+      sa:
+        type: string
+      phone_sa:
+        type: string
+      sra:
+        type: string
+      phone_sra:
+        type: string
+      employee_one:
+        type: string
+      phone_employee_one:
+        type: string
+      employee_two:
+        type: string
+      phone_employee_two:
+        type: string
+      address:
+        type: string
+      district:
+        type: string
+      phone:
+        type: string
+      phone_police:
+        type: string
+      zip_code:
+        type: string
+      portage:
+        type: string
+      patrol:
+        type: string
+      opening_hours:
+        type: string
+      duress_password:
+        type: string
+      duress_password_check:
+        type: string
+      is_active:
+        type: boolean
+      latitude:
+        type: string
+      longitude:
+        type: string
+      notes:
+        type: string
+    required:
+    - gmttimezone
+    - segment
+    - country
+    - state
+    - city
+    - environment
+    - uniorg
+    - regional
+    - name
+    - bank
+    - parent
+    - gg
+    - phone_gg
+    - ga
+    - phone_ga
+    - sa
+    - phone_sa
+    - sra
+    - phone_sra
+    - employee_one
+    - phone_employee_one
+    - employee_two
+    - phone_employee_two
+    - address
+    - district
+    - phone
+    - phone_police
+    - zip_code
+    - portage
+    - patrol
+    - opening_hours
+    - duress_password
+    - duress_password_check
+    - is_active
+    - latitude
+    - longitude
+    - notes
+  login-user-request:
+    title: login-user-request
+    example:
+      password: RSOUZA1718
+      username: X236156
+    type: object
+    properties:
+      password:
+        type: string
+      username:
+        type: string
+    required:
+    - password
+    - username
+  Content-Type:
+    title: Content-Type
+    type: string
+    enum:
+    - application/x-www-form-urlencoded
+  Content-Type1:
+    title: Content-Type1
+    type: string
+    enum:
+    - application/json
+tags:
+- name: Perfil
+- name: Templates
+- name: Office OP
+- name: Grupo Agência
+- name: Ambiente
+- name: Feriado
+- name: Alarmes
+- name: Workflow
+- name: Configurações
+- name: Ronda
+- name: Questionário
+- name: Justificativas
+- name: Usuário
+- name: Agencias
+- name: Event
+- name: Equipamento
+- name: Operação
+- name: Açoes
+- name: Control ID
+- name: Alarmes multiplos
+- name: Rondas
+- name: Monitoramento
+- name: Pentasis
+- name: INTELBRAS
+- name: Controle de acesso
+- name: Dashboard
+- name: AUTODEFESA
+- name: Programacao horaria
+- name: Central de alarme
+- name: CFTV
+- name: Planta
+- name: Sinóptico
+- name: Intelbras
+- name: Programação Horária
+- name: Auto Defesa
+- name: Bosch Mode 2
+- name: Bosch Receptora
+- name: Scati
+- name: Sigma Cloud
+- name: Rastreador
+- name: Misc
+  description: ''
