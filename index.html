@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Documentação Swagger</title>
+    <!-- Inclua os estilos CSS da ferramenta escolhida -->
+    <!-- Para o Swagger UI -->
+    <link rel="stylesheet" type="text/css" href="/swagger-ui.css">
+</head>
+
+<body>
+    <div id="swagger-ui"></div>
+    <script src="/swagger-ui-bundle.js"></script>
+    <script>
+        window.onload = function () {
+            // Configurar o Swagger UI para carregar seu arquivo YAML
+            const ui = SwaggerUIBundle({
+                url: "/doc.yaml",
+                dom_id: "#swagger-ui",
+            });
+        }
+    </script>
+</body>
+
+</html>
