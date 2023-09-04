@@ -89,7 +89,7 @@ paths:
       summary: Cria perfil
       tags:
         - Perfil
-      operationId: Criar perfil
+      operationId: Criarperfil
       deprecated: false
       produces:
         - application/json
